@@ -1,0 +1,807 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8">
+<title>Skripsi - Rancang Bangun LMS SMKN 9 Garut</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+@page Section1 {size:612.0pt 792.0pt; margin:113.4pt 85.05pt 85.05pt 113.4pt; mso-header-margin:36.0pt; mso-footer-margin:36.0pt;}
+div.Section1 {page:Section1;}
+body { font-family:"Times New Roman",serif; font-size:12pt; line-height:150%; }
+h1 { mso-style-name:"Heading 1"; font-size:14pt; font-weight:bold; page-break-before:always; text-align:center; text-transform:uppercase; margin-bottom:18pt; }
+h2 { mso-style-name:"Heading 2"; font-size:12pt; font-weight:bold; margin-top:18pt; margin-bottom:8pt; }
+h3 { mso-style-name:"Heading 3"; font-size:12pt; font-weight:bold; font-style:italic; margin-top:12pt; margin-bottom:6pt; }
+p { text-align:justify; margin:0 0 10pt 0; text-indent:0; }
+table { border-collapse:collapse; width:100%; font-size:11pt; margin:8pt 0 14pt 0; }
+td, th { border:1pt solid #000000; padding:4pt 6pt; vertical-align:top; text-align:left; }
+th { font-weight:bold; background:#D9D9D9; text-align:center; }
+.center { text-align:center; }
+.todo { background:#FFF2CC; border:1pt solid #BF8F00; padding:8pt 10pt; margin:10pt 0; }
+.todo p { margin:0; }
+pre { font-family:"Courier New",monospace; font-size:9.5pt; background:#F2F2F2; border:1pt solid #BFBFBF; padding:8pt; white-space:pre-wrap; line-height:120%; }
+code { font-family:"Courier New",monospace; font-size:10pt; background:#F2F2F2; }
+.cover { text-align:center; }
+.cover .title { font-size:14pt; font-weight:bold; margin:24pt 0; line-height:150%; }
+.cover .label { font-size:12pt; margin:6pt 0; }
+.small { font-size:10pt; }
+ol, ul { margin:0 0 10pt 24pt; padding:0; }
+li { margin-bottom:4pt; text-align:justify; }
+hr { border:none; border-top:1pt solid #000; margin:16pt 0; }
+</style>
+</head>
+<body>
+<div class="Section1">
+
+<!-- ================= HALAMAN SAMPUL ================= -->
+<div class="cover" style="margin-top:60pt;">
+<p class="label">SKRIPSI</p>
+<p class="title">RANCANG BANGUN LEARNING MANAGEMENT SYSTEM (LMS)<br>
+BERBASIS WEB MENGGUNAKAN METODE DESIGN AND DEVELOPMENT<br>
+RESEARCH (DDR) DAN FRAMEWORK LARAVEL<br>
+DI SMKN 9 GARUT</p>
+
+<p class="label small" style="margin-top:36pt;">[Logo Institusi &mdash; sisipkan logo Institut Pendidikan Indonesia di sini]</p>
+
+<p class="label" style="margin-top:48pt;">Diajukan untuk memenuhi salah satu syarat<br>memperoleh gelar Sarjana Sistem Informasi</p>
+
+<p class="label" style="margin-top:48pt;"><strong>Oleh:</strong><br>
+ASEP SURYANA<br>
+NIM 24572014006</p>
+
+<p class="label" style="margin-top:60pt;"><strong>PROGRAM STUDI SISTEM INFORMASI</strong><br>
+<strong>INSTITUT PENDIDIKAN INDONESIA</strong><br>
+2026</p>
+</div>
+
+<div class="todo" style="page-break-before:always;">
+<p><strong>&#9888; TODO (lengkapi sebelum sidang):</strong> Halaman ini adalah kerangka Halaman Sampul umum. Sesuaikan dengan format resmi sampul skripsi Institut Pendidikan Indonesia Program Studi Sistem Informasi (posisi logo, jenis font sampul, tata letak) sesuai buku pedoman skripsi kampus Anda &mdash; karena pedoman resmi belum tersedia saat naskah ini disusun.</p>
+</div>
+
+<!-- ================= LEMBAR PENGESAHAN ================= -->
+<h1 style="page-break-before:always;">Lembar Pengesahan</h1>
+<div class="todo">
+<p><strong>&#9888; TODO (lengkapi):</strong> Halaman ini wajib memuat judul skripsi, nama &amp; NIM mahasiswa, tanggal ujian sidang, serta kolom tanda tangan Dosen Pembimbing I/II, Penguji, dan Ketua Program Studi sesuai format resmi kampus. Halaman ini tidak dapat disusun otomatis karena memerlukan tanda tangan basah/digital pihak berwenang.</p>
+</div>
+
+<!-- ================= PERNYATAAN ORISINALITAS ================= -->
+<h1>Pernyataan Orisinalitas</h1>
+<p>Saya yang bertanda tangan di bawah ini menyatakan bahwa skripsi dengan judul <em>"Rancang Bangun Learning Management System (LMS) Berbasis Web Menggunakan Metode Design and Development Research (DDR) dan Framework Laravel di SMKN 9 Garut"</em> adalah hasil karya saya sendiri dan belum pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun. Sepanjang pengetahuan saya, tidak terdapat karya atau pendapat yang pernah ditulis atau diterbitkan oleh orang lain, kecuali yang secara tertulis diacu dalam naskah ini dan disebutkan dalam Daftar Pustaka.</p>
+<p class="center" style="margin-top:48pt;">Garut, &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; 2026</p>
+<p class="center" style="margin-top:60pt;">ASEP SURYANA<br>NIM 24572014006</p>
+
+<!-- ================= KATA PENGANTAR ================= -->
+<h1>Kata Pengantar</h1>
+<p>Puji dan syukur penulis panjatkan kehadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya sehingga penulis dapat menyelesaikan skripsi yang berjudul "Rancang Bangun Learning Management System (LMS) Berbasis Web Menggunakan Metode Design and Development Research (DDR) dan Framework Laravel di SMKN 9 Garut" sebagai salah satu syarat untuk memperoleh gelar Sarjana pada Program Studi Sistem Informasi, Institut Pendidikan Indonesia.</p>
+<div class="todo">
+<p><strong>&#9888; TODO (lengkapi):</strong> Tulis ucapan terima kasih pribadi Anda di sini &mdash; kepada Dosen Pembimbing, Ketua Program Studi, pihak SMKN 9 Garut yang mengizinkan penelitian, keluarga, dan pihak lain yang relevan. Bagian ini bersifat personal sehingga sengaja tidak diisi otomatis. Tutup dengan harapan agar skripsi ini bermanfaat dan permintaan maaf atas kekurangan.</p>
+</div>
+<p class="center" style="margin-top:24pt;">Garut, &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; 2026</p>
+<p class="center">Penulis</p>
+
+<!-- ================= ABSTRAK ================= -->
+<h1>Abstrak</h1>
+<p><strong>RANCANG BANGUN LEARNING MANAGEMENT SYSTEM (LMS) BERBASIS WEB MENGGUNAKAN METODE DESIGN AND DEVELOPMENT RESEARCH (DDR) DAN FRAMEWORK LARAVEL DI SMKN 9 GARUT</strong></p>
+<p>Oleh: Asep Suryana (NIM 24572014006)</p>
+<p>Proses akademik di SMKN 9 Garut &mdash; distribusi materi, presensi, penugasan, ujian, dan rekapitulasi nilai &mdash; masih dilakukan secara manual sehingga berdampak pada efisiensi waktu guru, transparansi informasi bagi siswa, dan akurasi data untuk kebutuhan pelaporan sekolah. Penelitian ini bertujuan merancang dan membangun sebuah Learning Management System (LMS) berbasis web yang menghubungkan tiga peran pengguna &mdash; Administrator, Guru, dan Siswa &mdash; dalam satu sistem terpadu. Penelitian menggunakan pendekatan <em>Design and Development Research</em> (DDR) Tipe 1 (Richey &amp; Klein, 2007) dengan empat tahap: Analysis, Design, Development, dan Evaluation. Pada tahap Analysis dirumuskan 27 kebutuhan fungsional dan 7 kebutuhan nonfungsional. Pada tahap Design dihasilkan Entity Relationship Diagram dengan 30 entitas domain serta diagram UML (use case, activity, sequence). Pada tahap Development, sistem diimplementasikan menggunakan framework Laravel 12 dan PHP 8.2, menghasilkan 49 controller, 28 model, dan 32 berkas migrasi basis data, dengan penerapan Role-Based Access Control tiga peran serta proteksi CSRF, XSS, dan SQL Injection. Pada tahap Evaluation, pengujian <em>black-box</em> terhadap 13 kasus uji &mdash; mencakup autentikasi, otorisasi, integritas data, dan akurasi penilaian otomatis pada 600 jawaban kuis serta 590 baris nilai &mdash; menunjukkan tingkat keberhasilan 100%. Pengujian juga menemukan dan berhasil memperbaiki satu cacat fungsional pada modul penghapusan data guru. <span style="background:#FFF2CC;">[&#9888; TODO: lengkapi kalimat hasil evaluasi penerimaan pengguna (UAT) setelah data kuesioner responden nyata terkumpul dan diolah, sesuai Bab IV subbab 4.4.2]</span>. Hasil penelitian menunjukkan bahwa metode DDR dapat diterapkan secara efektif dalam pengembangan sistem informasi pendidikan berbasis web.</p>
+<p><strong>Kata kunci:</strong> Learning Management System, Design and Development Research, Laravel, Sistem Informasi Akademik, Black-Box Testing.</p>
+
+<h1>Abstract</h1>
+<p><strong>DEVELOPMENT OF A WEB-BASED LEARNING MANAGEMENT SYSTEM (LMS) USING THE DESIGN AND DEVELOPMENT RESEARCH (DDR) METHOD AND THE LARAVEL FRAMEWORK AT SMKN 9 GARUT</strong></p>
+<p>By: Asep Suryana (Student ID 24572014006)</p>
+<p>Academic processes at SMKN 9 Garut &mdash; material distribution, attendance recording, assignments, examinations, and grade recapitulation &mdash; are still carried out manually, affecting teacher time efficiency, information transparency for students, and data accuracy for school reporting needs. This research aims to design and build a web-based Learning Management System (LMS) that connects three user roles &mdash; Administrator, Teacher, and Student &mdash; within one integrated system. The research uses the Design and Development Research (DDR) Type 1 approach (Richey &amp; Klein, 2007) with four stages: Analysis, Design, Development, and Evaluation. In the Analysis stage, 27 functional requirements and 7 non-functional requirements were formulated. In the Design stage, an Entity Relationship Diagram with 30 domain entities and UML diagrams (use case, activity, sequence) were produced. In the Development stage, the system was implemented using the Laravel 12 framework and PHP 8.2, resulting in 49 controllers, 28 models, and 32 database migration files, with three-role Role-Based Access Control and CSRF, XSS, and SQL Injection protection. In the Evaluation stage, black-box testing on 13 test cases &mdash; covering authentication, authorization, data integrity, and automatic grading accuracy across 600 quiz answers and 590 grade records &mdash; showed a 100% success rate. Testing also identified and successfully fixed one functional defect in the teacher-deletion module. <span style="background:#FFF2CC;">[&#9888; TODO: complete this sentence with User Acceptance Testing results once real respondent data is collected]</span>. The results show that the DDR method can be effectively applied in the development of web-based educational information systems.</p>
+<p><strong>Keywords:</strong> Learning Management System, Design and Development Research, Laravel, Academic Information System, Black-Box Testing.</p>
+
+<!-- ================= DAFTAR ISI ================= -->
+<h1>Daftar Isi</h1>
+<div class="todo">
+<p><strong>&#9888; Cara membuat Daftar Isi otomatis di Word:</strong> Seluruh judul Bab (Heading 1), subbab (Heading 2), dan sub-subbab (Heading 3) pada dokumen ini sudah diberi gaya (<em>style</em>) Word yang sesuai. Setelah membuka file ini di Microsoft Word: letakkan kursor di bawah judul "Daftar Isi", lalu pilih menu <strong>References &rarr; Table of Contents &rarr; Automatic Table</strong>. Word akan otomatis membuat daftar isi lengkap dengan nomor halaman yang benar dan dapat diperbarui kapan saja (klik kanan &rarr; Update Field) setiap kali Anda mengedit dokumen.</p>
+</div>
+<p>Ringkasan struktur dokumen ini:</p>
+<ul>
+<li>BAB I Pendahuluan</li>
+<li>BAB II Tinjauan Pustaka</li>
+<li>BAB III Metode Penelitian</li>
+<li>BAB IV Hasil dan Pembahasan</li>
+<li>BAB V Penutup</li>
+<li>Daftar Pustaka</li>
+<li>Lampiran</li>
+</ul>
+
+<!-- ================= DAFTAR TABEL & GAMBAR ================= -->
+<h1>Daftar Tabel dan Daftar Gambar</h1>
+<div class="todo">
+<p><strong>&#9888; Cara membuat Daftar Tabel/Gambar otomatis di Word:</strong> Beri <em>caption</em> pada setiap tabel (klik kanan tabel &rarr; Insert Caption &rarr; "Table") dan setiap gambar/screenshot yang Anda sisipkan (Insert Caption &rarr; "Figure") setelah membuka dokumen ini di Word. Kemudian gunakan <strong>References &rarr; Insert Table of Figures</strong> untuk membuat Daftar Tabel dan Daftar Gambar otomatis.</p>
+</div>
+
+<h1>Bab I<br>Pendahuluan</h1>
+
+<h2>1.1 Latar Belakang</h2>
+<p>Perkembangan teknologi informasi dan komunikasi telah mendorong hampir seluruh sektor kehidupan, termasuk sektor pendidikan, untuk bertransformasi ke arah digital. Proses pembelajaran yang sebelumnya bergantung sepenuhnya pada interaksi tatap muka dan media fisik kini semakin banyak diintegrasikan dengan platform digital yang memungkinkan distribusi materi, pemberian tugas, pelaksanaan ujian, hingga rekapitulasi nilai dilakukan secara terpusat dan dapat diakses kapan saja. Platform semacam ini secara umum dikenal dengan istilah <em>Learning Management System</em> (LMS), yaitu sebuah sistem perangkat lunak yang dirancang untuk merencanakan, melaksanakan, dan menilai proses pembelajaran secara elektronik.</p>
+<p>SMK Negeri 9 Garut, sebagaimana sekolah menengah kejuruan pada umumnya, menyelenggarakan proses akademik yang melibatkan tiga peran utama, yaitu Administrator, Guru, dan Siswa. Berdasarkan pengamatan awal terhadap proses bisnis yang berjalan, ditemukan bahwa sebagian besar aktivitas akademik masih dilakukan secara manual atau semi-manual, di antaranya:</p>
+<ol>
+<li>Distribusi materi pembelajaran yang masih mengandalkan media fisik (fotokopi) atau pengiriman berkas melalui aplikasi perpesanan pribadi yang tidak terdokumentasi secara terpusat.</li>
+<li>Presensi siswa yang dicatat menggunakan kertas, sehingga rentan terhadap kehilangan data dan menyulitkan proses rekapitulasi kehadiran per semester.</li>
+<li>Pengumpulan dan penilaian tugas yang dilakukan secara langsung (luring) tanpa jejak digital, sehingga sulit ditelusuri riwayatnya.</li>
+<li>Pelaksanaan ujian yang sepenuhnya berbasis kertas, sehingga proses koreksi soal pilihan ganda memakan waktu dan berpotensi menimbulkan kesalahan penjumlahan skor manual.</li>
+<li>Rekapitulasi nilai akhir yang dilakukan menggunakan berkas spreadsheet terpisah oleh masing-masing guru, sehingga tidak ada satu sumber data (<em>single source of truth</em>) yang dapat diakses secara real-time oleh siswa maupun pihak administrasi sekolah.</li>
+</ol>
+<p>Permasalahan-permasalahan di atas berdampak pada efisiensi waktu guru dan staf administrasi, transparansi informasi akademik bagi siswa, serta akurasi data yang dibutuhkan untuk kepentingan pelaporan dan akreditasi sekolah. Kondisi ini menunjukkan adanya kebutuhan nyata (<em>needs</em>) akan sebuah sistem informasi akademik terpadu yang mampu mengakomodasi seluruh proses belajar-mengajar dalam satu platform berbasis web, dapat diakses oleh ketiga peran (Administrator, Guru, Siswa) sesuai kewenangannya masing-masing, serta tidak bergantung pada infrastruktur jaringan internet yang mahal atau kompleks &mdash; mengingat keterbatasan infrastruktur TI yang umum dihadapi sekolah negeri di daerah.</p>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Paragraf di atas menggambarkan kondisi umum yang lazim ditemukan di sekolah dan konsisten dengan dokumen analisis kebutuhan sistem. Jika Anda melakukan observasi/wawancara langsung ke SMKN 9 Garut, perkuat paragraf ini dengan data primer: tanggal observasi, nama dan jabatan narasumber yang diwawancarai, serta kutipan singkat hasil wawancara.</p></div>
+<p>Berdasarkan permasalahan tersebut, penelitian ini mengembangkan sebuah <strong>Learning Management System (LMS) berbasis web</strong> yang menghubungkan tiga peran pengguna &mdash; Administrator, Guru, dan Siswa &mdash; dalam satu sistem terpadu untuk manajemen data akademik, distribusi materi pembelajaran, pengelolaan tugas, kuis, ujian daring dengan penilaian otomatis, presensi, nilai, jadwal, hingga komunikasi sekolah melalui pengumuman dan forum diskusi. Sistem dikembangkan menggunakan <strong>framework Laravel 12</strong> berbasis bahasa pemrograman PHP dan basis data MySQL, dengan pendekatan penelitian <strong>Design and Development Research (DDR)</strong> sebagaimana dikemukakan oleh Richey &amp; Klein (2007), yang menekankan proses sistematis mulai dari analisis kebutuhan, perancangan, pengembangan, hingga evaluasi produk sebagai satu siklus penelitian yang terdokumentasi dan dapat dipertanggungjawabkan secara ilmiah.</p>
+<p>Pemilihan metode DDR didasarkan pada karakteristik penelitian ini yang tidak sekadar membangun perangkat lunak (rekayasa perangkat lunak murni), melainkan juga bertujuan menghasilkan sebuah <strong>produk pendidikan (educational product)</strong> yang divalidasi kelayakannya melalui pengujian fungsional (black-box testing) dan evaluasi penerimaan pengguna (user acceptance) oleh calon pengguna aktual, yaitu administrator, guru, dan siswa SMKN 9 Garut, sehingga hasil akhir penelitian tidak hanya berupa sistem yang berjalan (<em>working system</em>), tetapi juga bukti empiris mengenai kelayakan dan penerimaan sistem tersebut oleh penggunanya.</p>
+
+<h2>1.2 Rumusan Masalah</h2>
+<p>Berdasarkan latar belakang di atas, rumusan masalah dalam penelitian ini adalah sebagai berikut:</p>
+<ol>
+<li>Bagaimana menganalisis kebutuhan fungsional dan nonfungsional sistem Learning Management System yang sesuai dengan proses bisnis akademik di SMKN 9 Garut?</li>
+<li>Bagaimana merancang arsitektur sistem, basis data, dan alur proses (use case, activity, dan sequence diagram) untuk LMS yang mengakomodasi tiga peran pengguna (Administrator, Guru, Siswa)?</li>
+<li>Bagaimana mengimplementasikan rancangan tersebut menjadi sebuah sistem LMS berbasis web menggunakan framework Laravel 12 dengan menerapkan prinsip keamanan aplikasi web (CSRF, XSS, SQL Injection protection, dan Role-Based Access Control)?</li>
+<li>Bagaimana hasil pengujian fungsional (black-box testing) terhadap sistem LMS yang telah dibangun, ditinjau dari kesesuaian antara skenario uji dengan hasil yang diharapkan?</li>
+<li>Bagaimana tingkat penerimaan pengguna (Administrator, Guru, dan Siswa) terhadap sistem LMS yang dikembangkan, berdasarkan hasil evaluasi menggunakan kuesioner <em>User Acceptance Testing</em>?</li>
+</ol>
+
+<h2>1.3 Tujuan Penelitian</h2>
+<p>Sejalan dengan rumusan masalah di atas, tujuan penelitian ini adalah:</p>
+<ol>
+<li>Menghasilkan dokumen analisis kebutuhan fungsional dan nonfungsional sistem LMS yang sesuai dengan kebutuhan proses akademik SMKN 9 Garut.</li>
+<li>Menghasilkan rancangan arsitektur sistem, Entity Relationship Diagram (ERD), serta diagram UML (use case, activity, sequence) sebagai dasar pengembangan sistem.</li>
+<li>Menghasilkan sebuah sistem Learning Management System berbasis web yang dibangun menggunakan framework Laravel 12, mencakup modul manajemen data master, materi pembelajaran, tugas, kuis, ujian daring dengan penilaian otomatis, presensi, nilai, jadwal, pengumuman, dan forum diskusi.</li>
+<li>Mengetahui hasil pengujian fungsional (black-box testing) terhadap fitur-fitur utama sistem untuk memastikan sistem berjalan sesuai spesifikasi yang dirancang.</li>
+<li>Mengetahui tingkat penerimaan pengguna terhadap sistem LMS yang dikembangkan melalui evaluasi <em>User Acceptance Testing</em> kepada Administrator, Guru, dan Siswa SMKN 9 Garut.</li>
+</ol>
+
+<h2>1.4 Manfaat Penelitian</h2>
+<h3>1.4.1 Manfaat Teoritis</h3>
+<p>Penelitian ini diharapkan dapat menjadi referensi dan memperkaya kajian ilmiah di bidang Sistem Informasi, khususnya terkait penerapan metode <strong>Design and Development Research (DDR)</strong> dalam pengembangan perangkat lunak pendidikan berbasis web, serta menjadi bahan rujukan bagi penelitian sejenis di masa mendatang.</p>
+<h3>1.4.2 Manfaat Praktis</h3>
+<ol>
+<li><strong>Bagi SMKN 9 Garut</strong> &mdash; menyediakan sistem terpadu yang membantu proses distribusi materi, pemberian tugas, pelaksanaan ujian daring, presensi, dan rekapitulasi nilai secara digital, sehingga meningkatkan efisiensi administrasi akademik.</li>
+<li><strong>Bagi Guru</strong> &mdash; mempermudah pengelolaan materi ajar, penilaian tugas dan ujian (termasuk penilaian otomatis untuk soal pilihan ganda), serta pemantauan presensi siswa tanpa proses rekap manual.</li>
+<li><strong>Bagi Siswa</strong> &mdash; menyediakan akses terhadap materi pembelajaran, tugas, kuis/ujian, nilai, presensi, dan jadwal pelajaran secara mandiri (<em>self-service</em>) kapan saja diperlukan.</li>
+<li><strong>Bagi Peneliti</strong> &mdash; menjadi sarana penerapan ilmu yang diperoleh selama perkuliahan, khususnya dalam analisis, perancangan, dan implementasi sistem informasi berbasis web menggunakan metodologi penelitian pengembangan.</li>
+</ol>
+
+<h2>1.5 Batasan Masalah</h2>
+<p>Agar penelitian lebih terarah dan tidak menyimpang dari tujuan yang ditetapkan, penelitian ini dibatasi pada hal-hal berikut:</p>
+<ol>
+<li>Sistem dikembangkan khusus untuk mendukung proses akademik di SMKN 9 Garut dan tidak mencakup proses non-akademik seperti keuangan/pembayaran SPP, kepegawaian (payroll), atau perpustakaan.</li>
+<li>Registrasi akun secara publik (self sign-up) tidak disediakan; seluruh akun Guru dan Siswa dibuat dan dikelola oleh Administrator untuk menjaga validitas data akademik.</li>
+<li>Sistem dibangun menggunakan framework Laravel 12 dengan basis data MySQL/MariaDB, dan dijalankan pada lingkungan server lokal XAMPP (Apache + MySQL + PHP 8.2+).</li>
+<li>Antarmuka pengguna (frontend) dibangun menggunakan Bootstrap 5, Font Awesome 6, dan Chart.js yang di-<em>vendor</em> secara lokal (tidak melalui CDN maupun proses build Node.js/NPM/Vite), sehingga sistem dapat berjalan sepenuhnya secara luring (<em>offline</em>) tanpa koneksi internet.</li>
+<li>Pengujian sistem dilakukan dengan metode <strong>black-box testing</strong> untuk menguji kesesuaian fungsional terhadap spesifikasi, serta <strong>kuesioner User Acceptance Testing</strong> dengan skala Likert kepada responden terbatas (perwakilan Administrator, Guru, dan Siswa SMKN 9 Garut), bukan pengujian performa/beban (<em>load/stress testing</em>) skala besar.</li>
+<li>Penelitian tidak mencakup pengembangan aplikasi mobile native (Android/iOS); antarmuka web yang dibangun bersifat responsif sehingga dapat diakses melalui perangkat mobile menggunakan peramban (browser).</li>
+</ol>
+
+<h2>1.6 Sistematika Penulisan</h2>
+<p>Sistematika penulisan skripsi ini disusun dalam lima bab, dengan uraian sebagai berikut:</p>
+<p><strong>BAB I PENDAHULUAN</strong> &mdash; menguraikan latar belakang masalah, rumusan masalah, tujuan penelitian, manfaat penelitian, batasan masalah, dan sistematika penulisan.</p>
+<p><strong>BAB II TINJAUAN PUSTAKA</strong> &mdash; menguraikan landasan teori yang digunakan sebagai dasar penelitian, meliputi konsep Learning Management System, rekayasa perangkat lunak, framework Laravel, basis data, Unified Modeling Language (UML), Entity Relationship Diagram (ERD), metode Design and Development Research (DDR), serta kajian penelitian terdahulu yang relevan.</p>
+<p><strong>BAB III METODE PENELITIAN</strong> &mdash; menguraikan jenis penelitian, tempat dan waktu penelitian, subjek penelitian, prosedur penelitian berdasarkan tahapan DDR (Analysis, Design, Development, Evaluation), teknik pengumpulan data, instrumen penelitian, serta teknik analisis data.</p>
+<p><strong>BAB IV HASIL DAN PEMBAHASAN</strong> &mdash; menguraikan hasil penelitian pada setiap tahapan DDR: hasil analisis kebutuhan, hasil perancangan (arsitektur, ERD, diagram UML), hasil pengembangan (implementasi sistem per modul), serta hasil evaluasi berupa pengujian black-box dan evaluasi penerimaan pengguna.</p>
+<p><strong>BAB V PENUTUP</strong> &mdash; berisi kesimpulan yang menjawab rumusan masalah penelitian, serta saran untuk pengembangan dan penelitian selanjutnya.</p>
+
+<h1>Bab II<br>Tinjauan Pustaka</h1>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Seluruh sitasi (Penulis, Tahun) pada bab ini merujuk pada konsep/buku/sumber yang secara umum dikenal luas di bidang Sistem Informasi dan Rekayasa Perangkat Lunak. Sebelum sidang, cek kembali setiap sitasi terhadap edisi buku/artikel yang benar-benar Anda akses, lalu sesuaikan sesuai gaya sitasi yang diwajibkan program studi Anda.</p></div>
+
+<h2>2.1 Kajian Teori</h2>
+
+<h3>2.1.1 Sistem Informasi</h3>
+<p>Sistem informasi adalah kombinasi teratur dari manusia, perangkat keras, perangkat lunak, jaringan komunikasi, sumber data, kebijakan, dan prosedur yang bertujuan menyimpan, mengambil, mengubah, dan menyebarkan informasi dalam sebuah organisasi (Laudon &amp; Laudon, 2020). Dalam konteks pendidikan, sistem informasi berperan mendukung proses pengambilan keputusan, koordinasi, dan pengendalian aktivitas akademik, sekaligus membantu guru, siswa, dan staf administrasi dalam menganalisis permasalahan, memvisualisasikan hal-hal kompleks, dan menciptakan produk baru berupa layanan digital.</p>
+
+<h3>2.1.2 Learning Management System (LMS) dan E-Learning</h3>
+<p><em>E-learning</em> merupakan proses pembelajaran yang memanfaatkan teknologi elektronik, khususnya internet, sebagai media penyampaian materi, interaksi, dan evaluasi pembelajaran (Clark &amp; Mayer, 2016). <em>Learning Management System</em> (LMS) adalah perangkat lunak yang digunakan untuk merencanakan, melaksanakan, dan menilai proses pembelajaran tertentu, umumnya menyediakan fasilitas bagi pengajar untuk mengelola kelas, materi ajar, dan penilaian, sekaligus fasilitas bagi peserta didik untuk mengakses materi dan mengikuti evaluasi secara daring.</p>
+<p>Secara umum, fitur inti sebuah LMS mencakup: (1) manajemen pengguna dan peran (<em>role management</em>), (2) manajemen konten/materi pembelajaran, (3) manajemen penugasan dan pengumpulan tugas, (4) evaluasi/penilaian (kuis dan ujian dengan penilaian otomatis untuk soal objektif), (5) pelaporan dan analitik capaian belajar, serta (6) komunikasi antarpengguna (pengumuman, forum diskusi, notifikasi). Sistem LMS SMKN 9 Garut yang dikembangkan pada penelitian ini mengadopsi keenam komponen tersebut, ditambah modul presensi dan jadwal pelajaran yang relevan dengan konteks sekolah menengah kejuruan di Indonesia.</p>
+
+<h3>2.1.3 Rekayasa Perangkat Lunak dan Model Pengembangan Sistem</h3>
+<p>Rekayasa perangkat lunak (<em>software engineering</em>) adalah disiplin ilmu yang membahas seluruh aspek produksi perangkat lunak, mulai dari tahap awal spesifikasi sistem hingga pemeliharaan sistem setelah digunakan (Pressman &amp; Maxim, 2020; Sommerville, 2016). Berbagai model pengembangan perangkat lunak telah dikenal luas, di antaranya model <em>Waterfall</em> yang bersifat linear-sekuensial (analisis, desain, implementasi, pengujian, pemeliharaan), model <em>Prototyping</em> yang menekankan iterasi purwarupa bersama pengguna, serta model <em>Agile</em> yang menekankan pengembangan inkremental dan kolaboratif. Penelitian ini tidak menggunakan model SDLC murni tersebut, melainkan kerangka <strong>Design and Development Research (DDR)</strong> &mdash; dijelaskan pada subbab 2.1.9 &mdash; yang memosisikan pengembangan sistem sebagai bagian dari proses penelitian ilmiah yang menghasilkan bukti empiris atas kelayakan produk.</p>
+
+<h3>2.1.4 Framework Laravel</h3>
+<p>Laravel adalah <em>framework</em> aplikasi web berbasis bahasa pemrograman PHP yang bersifat <em>open-source</em>, menggunakan pola arsitektur <em>Model-View-Controller</em> (MVC) untuk memisahkan logika data (Model), tampilan (View), dan logika kendali aplikasi (Controller) (Otwell, 2024; dokumentasi resmi laravel.com). Laravel menyediakan berbagai komponen bawaan yang mempercepat pengembangan, di antaranya <em>Eloquent ORM</em> untuk interaksi basis data berorientasi objek, <em>Blade templating engine</em> untuk penyusunan tampilan, sistem migrasi basis data (<em>migrations</em>) untuk mengelola skema secara terversi, serta mekanisme keamanan bawaan seperti proteksi CSRF (<em>Cross-Site Request Forgery</em>) dan <em>query binding</em> yang mencegah SQL Injection. Penelitian ini menggunakan <strong>Laravel 12</strong> dengan PHP 8.2, sebagaimana dispesifikasikan pada berkas konfigurasi <code>composer.json</code> proyek.</p>
+<p>Selain Laravel inti, penelitian ini memanfaatkan beberapa paket (<em>package</em>) pendukung dalam ekosistem Laravel:</p>
+<ul>
+<li><strong>Laravel Fortify</strong> &mdash; menyediakan implementasi backend autentikasi (login, registrasi, manajemen profil, reset password) tanpa mendikte tampilan antarmuka, sehingga tampilan dapat disesuaikan dengan tema sekolah.</li>
+<li><strong>Spatie Laravel-Permission</strong> &mdash; menyediakan implementasi <em>Role-Based Access Control</em> (RBAC) untuk mengatur hak akses berdasarkan peran (Administrator, Guru, Siswa) pada level middleware dan otorisasi.</li>
+<li><strong>barryvdh/laravel-dompdf</strong> &mdash; menyediakan kemampuan pembuatan dokumen PDF dari tampilan HTML (Blade view) untuk kebutuhan cetak laporan.</li>
+<li><strong>maatwebsite/excel</strong> &mdash; menyediakan kemampuan ekspor data ke format Microsoft Excel (.xlsx).</li>
+</ul>
+
+<h3>2.1.5 Basis Data dan Entity Relationship Diagram (ERD)</h3>
+<p>Basis data (<em>database</em>) adalah kumpulan data yang terorganisasi sedemikian rupa sehingga dapat diakses, dikelola, dan diperbarui dengan mudah (Connolly &amp; Begg, 2015). <em>Entity Relationship Diagram</em> (ERD) adalah notasi grafis yang digunakan untuk memodelkan entitas data beserta relasi antarentitas dalam suatu sistem, umumnya digunakan pada tahap perancangan basis data sebelum diimplementasikan ke dalam <em>Data Definition Language</em> (DDL) suatu <em>Database Management System</em> (DBMS) (Elmasri &amp; Navathe, 2016). Penelitian ini menggunakan <strong>MySQL/MariaDB</strong> sebagai DBMS, dengan skema basis data yang dirancang dalam bentuk ERD mencakup 30 tabel domain (lihat Bab IV), serta menerapkan integritas referensial melalui <em>foreign key constraint</em> dengan tiga jenis aksi hapus (<code>CASCADE</code>, <code>RESTRICT</code>, dan <code>SET NULL</code>) yang disesuaikan dengan makna bisnis masing-masing relasi.</p>
+
+<h3>2.1.6 Unified Modeling Language (UML)</h3>
+<p><em>Unified Modeling Language</em> (UML) adalah bahasa permodelan standar yang digunakan untuk menspesifikasikan, memvisualisasikan, membangun, dan mendokumentasikan artefak dari sistem perangkat lunak (Booch, Rumbaugh, &amp; Jacobson, dikutip dalam Sukamto &amp; Shalahuddin, 2018). Diagram UML yang digunakan dalam penelitian ini meliputi:</p>
+<ul>
+<li><strong>Use Case Diagram</strong> &mdash; menggambarkan interaksi antara aktor (Administrator, Guru, Siswa) dengan fungsionalitas sistem.</li>
+<li><strong>Activity Diagram</strong> &mdash; menggambarkan alur kerja/proses bisnis suatu fitur secara prosedural, misalnya alur siswa mengerjakan ujian daring.</li>
+<li><strong>Sequence Diagram</strong> &mdash; menggambarkan interaksi antarobjek/komponen sistem berdasarkan urutan waktu, misalnya alur autentikasi pengguna hingga pengalihan (<em>redirect</em>) berdasarkan peran.</li>
+<li><strong>Class Diagram</strong> &mdash; menggambarkan struktur statis sistem berupa kelas, atribut, method, dan relasi antarkelas (asosiasi beserta multiplicity-nya) &mdash; pada penelitian ini diturunkan langsung dari Model Eloquent yang merepresentasikan setiap entitas basis data.</li>
+</ul>
+
+<h3>2.1.7 Role-Based Access Control (RBAC)</h3>
+<p><em>Role-Based Access Control</em> adalah model kontrol akses yang membatasi akses sistem berdasarkan peran yang dimiliki pengguna dalam suatu organisasi, bukan berdasarkan identitas individu secara langsung (Ferraiolo, Kuhn, &amp; Chandramouli, 2007). Setiap peran (<em>role</em>) memiliki himpunan hak akses (<em>permission</em>) tertentu, dan setiap pengguna diberi satu atau lebih peran. Pendekatan ini memudahkan pengelolaan hak akses pada sistem dengan banyak pengguna dan mengurangi risiko akses tidak sah terhadap data yang bukan menjadi kewenangannya. Pada penelitian ini, RBAC diimplementasikan menggunakan paket <strong>Spatie Laravel-Permission</strong>, dengan tiga peran utama: <code>admin</code>, <code>guru</code>, dan <code>siswa</code>, yang diterapkan pada level <em>middleware</em> (<code>role:</code>) di seluruh grup rute (<em>route group</em>) sistem.</p>
+
+<h3>2.1.8 Keamanan Aplikasi Web</h3>
+<p>Keamanan aplikasi web merupakan aspek krusial dalam pengembangan sistem berbasis web, khususnya sistem yang menyimpan data pribadi dan data akademik. Mengacu pada kerangka <em>OWASP Top 10</em> (OWASP Foundation, 2021), beberapa kerentanan umum yang perlu diantisipasi meliputi <em>Cross-Site Request Forgery</em> (CSRF), <em>Cross-Site Scripting</em> (XSS), dan <em>SQL Injection</em>. Penelitian ini menerapkan mitigasi terhadap ketiga kerentanan tersebut melalui mekanisme bawaan Laravel: token CSRF pada setiap form, <em>output escaping</em> otomatis pada templating Blade (<code>&#123;&#123; &#125;&#125;</code>) untuk mencegah XSS, serta penggunaan <em>Eloquent ORM</em>/<em>Query Builder</em> dengan <em>parameter binding</em> untuk mencegah SQL Injection. Selain itu diterapkan <em>rate limiting</em> pada percobaan login (maksimum 5 kali per menit per kombinasi email dan alamat IP) untuk mengurangi risiko serangan <em>brute force</em>.</p>
+
+<h3>2.1.9 Black-Box Testing</h3>
+<p><em>Black-box testing</em> adalah metode pengujian perangkat lunak yang berfokus pada spesifikasi fungsional sistem tanpa memerlukan pengetahuan tentang struktur internal atau kode program (Pressman &amp; Maxim, 2020). Pengujian dilakukan dengan memberikan data masukan (<em>input</em>) pada suatu fungsi sistem, kemudian membandingkan keluaran (<em>output</em>) yang dihasilkan dengan hasil yang diharapkan (<em>expected result</em>). Jika keduanya sesuai, kasus uji (<em>test case</em>) dinyatakan <strong>valid/sesuai</strong>; jika tidak, dinyatakan <strong>tidak sesuai</strong> dan menjadi temuan yang perlu ditindaklanjuti. Metode ini dipilih dalam tahap evaluasi penelitian karena sesuai untuk menguji kesesuaian fungsional sistem terhadap kebutuhan yang telah dirumuskan pada tahap analisis.</p>
+
+<h3>2.1.10 Design and Development Research (DDR)</h3>
+<p><em>Design and Development Research</em> (DDR) didefinisikan oleh Richey &amp; Klein (2007) sebagai kajian sistematis terhadap proses perancangan, pengembangan, dan evaluasi, dengan tujuan membangun dasar empiris untuk penciptaan produk maupun model instruksional dan non-instruksional yang baru, ataupun yang telah ditingkatkan. Richey &amp; Nelson (1996) membedakan DDR menjadi dua tipe:</p>
+<ul>
+<li><strong>Tipe 1 (Product and Tool Research)</strong> &mdash; berfokus pada perancangan, pengembangan, dan evaluasi suatu produk atau program tertentu.</li>
+<li><strong>Tipe 2 (Model Research)</strong> &mdash; berfokus pada perancangan, pengembangan, dan validasi model perancangan/pengembangan itu sendiri.</li>
+</ul>
+<p>Penelitian ini termasuk <strong>DDR Tipe 1</strong>, karena berfokus pada perancangan, pengembangan, dan evaluasi satu produk konkret, yaitu sistem LMS SMKN 9 Garut, bukan pada pengembangan model pengembangan yang bersifat generik. Richey &amp; Klein (2007) menguraikan tahapan DDR Tipe 1 ke dalam empat tahap besar &mdash; <strong>Analysis, Design, Development,</strong> dan <strong>Evaluation</strong> &mdash; yang pada penelitian ini dioperasionalkan sebagai berikut (rincian lengkap pada Bab III):</p>
+<ol>
+<li><strong>Analysis</strong> &mdash; analisis kebutuhan fungsional dan nonfungsional berdasarkan proses bisnis akademik yang berjalan.</li>
+<li><strong>Design</strong> &mdash; perancangan arsitektur sistem, basis data (ERD), dan alur proses (diagram UML).</li>
+<li><strong>Development</strong> &mdash; implementasi rancangan menjadi kode program yang dapat dieksekusi (Laravel 12 + MySQL).</li>
+<li><strong>Evaluation</strong> &mdash; pengujian fungsional (black-box testing) dan evaluasi penerimaan pengguna (User Acceptance Testing).</li>
+</ol>
+
+<h3>2.1.11 Skala Likert dan User Acceptance Testing</h3>
+<p><em>User Acceptance Testing</em> (UAT) adalah tahap pengujian yang dilakukan oleh pengguna akhir (<em>end-user</em>) untuk menilai apakah sistem yang dibangun telah memenuhi kebutuhan dan dapat diterima untuk digunakan dalam kondisi nyata (Sommerville, 2016). Untuk mengukur tingkat penerimaan secara kuantitatif, penelitian ini menggunakan <strong>Skala Likert</strong> (Likert, 1932; dikutip dalam Sugiyono, 2019), yaitu skala yang mengukur sikap, pendapat, dan persepsi responden terhadap suatu objek dengan rentang jawaban bertingkat (umumnya 1&ndash;5, dari "Sangat Tidak Setuju" hingga "Sangat Setuju"). Hasil kuesioner diolah menggunakan perhitungan persentase kelayakan untuk menentukan kategori penerimaan sistem (lihat subbab 3.7).</p>
+
+<h2>2.2 Penelitian Terdahulu</h2>
+<p>Berikut kajian terhadap beberapa penelitian sejenis yang menjadi rujukan dan pembanding posisi penelitian ini:</p>
+<table>
+<tr><th>No</th><th>Judul Penelitian</th><th>Sumber</th><th>Metode</th><th>Perbedaan dengan Penelitian Ini</th></tr>
+<tr><td>1</td><td>Pengembangan Learning Management System (LMS) Berbasis Web dengan Framework Laravel di SMP Negeri 1 Bareng</td><td>Repositori Universitas Trunojoyo Madura</td><td>Model <em>Prototype</em> (7 tahap)</td><td>Rujukan memakai Prototyping; penelitian ini memakai DDR, objek SMK (bukan SMP), mencakup ujian daring auto-scoring &amp; RBAC 3 peran</td></tr>
+<tr><td>2</td><td>Design and Development of a LMS Information System using the Waterfall Method with Laravel (studi kasus PT. Kodinglab Integrasi Indonesia)</td><td>Proc. ICIE, Univ. Panca Budi</td><td>Waterfall</td><td>Objek berupa lembaga pelatihan (non-sekolah formal); metode Waterfall, bukan DDR</td></tr>
+<tr><td>3</td><td>Design and Development of an E-learning Information System Using Laravel at SMA Negeri 3 Medan</td><td>Journal of IT, CS &amp; Electrical Eng. (JITCSE)</td><td>Perlu verifikasi langsung ke artikel</td><td>Objek SMA (bukan SMK); metode pengembangan perlu diverifikasi</td></tr>
+<tr><td>4</td><td>Perancangan Sistem Informasi Akademik Sekolah Berbasis Website dengan Laravel 5 pada SMK Negeri 1 Cileles</td><td>Jurnal Ilmiah Sains dan Teknologi, LPPM Univ. Banten Jaya</td><td>Waterfall</td><td>Fokus sistem informasi akademik umum, belum mencakup modul pembelajaran daring (materi, kuis, ujian auto-scoring, forum)</td></tr>
+<tr><td>5</td><td>Implementasi Framework Laravel pada Sistem Informasi Akademik SMA Negeri 1 Kediri Berbasis Web</td><td>Jurnal Nasional Komputasi dan Teknologi Informasi (JNKTI)</td><td>Perlu verifikasi langsung ke artikel</td><td>Fokus sistem informasi akademik (bukan LMS pembelajaran daring penuh); objek SMA</td></tr>
+</table>
+<div class="todo">
+<p><strong>&#9888; TODO (WAJIB verifikasi sebelum sidang):</strong> Buka tautan sumber masing-masing (dicantumkan lengkap di Daftar Pustaka), catat nama penulis lengkap, tahun terbit, dan volume/nomor/halaman jurnal, lalu format ulang sesuai gaya sitasi program studi Anda. Untuk baris 3 dan 5, baca isi artikel lengkap untuk memastikan kolom "Metode" akurat.</p>
+</div>
+
+<h2>2.3 Kerangka Berpikir</h2>
+<p>Kerangka berpikir penelitian ini menggambarkan alur logis dari permasalahan hingga solusi yang dihasilkan, mengikuti tahapan DDR yang dijelaskan pada subbab 2.1.10:</p>
+<pre>[Masalah]
+Proses akademik manual (distribusi materi, presensi, tugas, ujian, rekap nilai)
+di SMKN 9 Garut belum terintegrasi dalam satu sistem digital
+        |
+        v
+[Tahap Analysis]
+Identifikasi kebutuhan fungsional (F-A01..F-S08) & nonfungsional (NF-01..NF-07)
+melalui observasi proses bisnis dan studi dokumen
+        |
+        v
+[Tahap Design]
+Perancangan ERD (30 tabel), Use Case Diagram, Activity Diagram,
+Sequence Diagram, dan arsitektur MVC berbasis Laravel
+        |
+        v
+[Tahap Development]
+Implementasi menjadi sistem berjalan: 49 controller, 28 model,
+32 migrasi basis data, RBAC 3 peran, integrasi PDF/Excel export
+        |
+        v
+[Tahap Evaluation]
+Black-box testing (verifikasi kesesuaian fungsional) +
+User Acceptance Testing (kuesioner Skala Likert ke Admin/Guru/Siswa)
+        |
+        v
+[Hasil]
+Sistem LMS SMKN 9 Garut yang teruji secara fungsional dan
+diketahui tingkat penerimaannya oleh pengguna nyata</pre>
+
+<h1>Bab III<br>Metode Penelitian</h1>
+
+<h2>3.1 Jenis Penelitian</h2>
+<p>Penelitian ini menggunakan pendekatan <strong>Design and Development Research (DDR) Tipe 1 (<em>Product and Tool Research</em>)</strong> sebagaimana dikemukakan oleh Richey &amp; Klein (2007) dan Richey &amp; Nelson (1996), yaitu penelitian yang berfokus pada perancangan, pengembangan, dan evaluasi suatu produk konkret &mdash; dalam hal ini sebuah sistem <em>Learning Management System</em> (LMS) berbasis web untuk SMKN 9 Garut. Penelitian dilakukan melalui empat tahap sistematis: <strong>Analysis, Design, Development,</strong> dan <strong>Evaluation</strong>, dengan setiap tahap menghasilkan artefak/luaran yang terdokumentasi dan dapat diverifikasi.</p>
+
+<h2>3.2 Tempat dan Waktu Penelitian</h2>
+<p><strong>Tempat penelitian:</strong> SMK Negeri 9 Garut.</p>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Isi alamat lengkap sekolah (jalan, kecamatan, kabupaten Garut, Jawa Barat) sesuai data resmi, dan isi jadwal kegiatan penelitian sesuai bimbingan yang disetujui dosen pembimbing pada tabel di bawah (contoh kerangka).</p></div>
+<table>
+<tr><th>No</th><th>Kegiatan</th><th>Bulan ke-1</th><th>Bulan ke-2</th><th>Bulan ke-3</th><th>Bulan ke-4</th><th>Bulan ke-5</th></tr>
+<tr><td>1</td><td>Observasi &amp; Analisis Kebutuhan</td><td class="center">&#10003;</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>Perancangan Sistem (ERD, UML)</td><td class="center">&#10003;</td><td class="center">&#10003;</td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>Pengembangan/Coding</td><td></td><td class="center">&#10003;</td><td class="center">&#10003;</td><td class="center">&#10003;</td><td></td></tr>
+<tr><td>4</td><td>Pengujian Black-Box</td><td></td><td></td><td></td><td class="center">&#10003;</td><td></td></tr>
+<tr><td>5</td><td>Evaluasi Pengguna (UAT)</td><td></td><td></td><td></td><td class="center">&#10003;</td><td class="center">&#10003;</td></tr>
+<tr><td>6</td><td>Penyusunan Laporan Skripsi</td><td class="center">&#10003;</td><td class="center">&#10003;</td><td class="center">&#10003;</td><td class="center">&#10003;</td><td class="center">&#10003;</td></tr>
+</table>
+
+<h2>3.3 Subjek dan Objek Penelitian</h2>
+<p><strong>Objek penelitian</strong> adalah sistem <em>Learning Management System</em> (LMS) berbasis web yang dikembangkan menggunakan framework Laravel 12, mencakup seluruh modul yang melayani tiga peran pengguna.</p>
+<p><strong>Subjek penelitian</strong> (responden pada tahap evaluasi) terdiri atas tiga kelompok pengguna di lingkungan SMKN 9 Garut:</p>
+<ol>
+<li><strong>Administrator</strong> &mdash; bertanggung jawab atas pengelolaan data master dan laporan akademik.</li>
+<li><strong>Guru</strong> &mdash; bertanggung jawab atas pengelolaan materi, tugas, kuis, ujian, presensi, dan nilai.</li>
+<li><strong>Siswa</strong> &mdash; sebagai pengguna akhir yang mengakses materi, mengerjakan tugas/kuis/ujian, dan melihat hasil belajarnya.</li>
+</ol>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Tentukan jumlah responden UAT secara pasti, misalnya "1 orang Administrator, 5 orang Guru, dan 20 orang Siswa yang dipilih secara <em>purposive sampling</em>" &mdash; sesuaikan dengan jumlah pengguna riil yang bersedia menjadi responden dan arahan dosen pembimbing.</p></div>
+
+<h2>3.4 Prosedur Penelitian</h2>
+<h3>3.4.1 Tahap Analysis (Analisis)</h3>
+<p>Tahap ini bertujuan mengidentifikasi kebutuhan fungsional dan nonfungsional sistem melalui observasi terhadap proses bisnis akademik yang berjalan di SMKN 9 Garut, studi dokumen terhadap struktur organisasi sekolah, serta perumusan kebutuhan ke dalam daftar kebutuhan fungsional berkode (F-A01&ndash;F-A10 untuk Administrator, F-G01&ndash;F-G09 untuk Guru, F-S01&ndash;F-S08 untuk Siswa) dan kebutuhan nonfungsional (NF-01&ndash;NF-07). Luaran tahap ini adalah dokumen analisis kebutuhan sistem (subbab 4.1).</p>
+<h3>3.4.2 Tahap Design (Perancangan)</h3>
+<p>Tahap ini menerjemahkan kebutuhan menjadi rancangan teknis: perancangan basis data dalam bentuk Entity Relationship Diagram, perancangan proses dalam bentuk Use Case/Activity/Sequence Diagram, perancangan struktur objek dalam bentuk Class Diagram (kelas, atribut, method bisnis, dan relasi antarkelas sebagai jembatan antara ERD dan implementasi kode), dan perancangan arsitektur aplikasi mengikuti pola MVC dengan pemisahan direktori berdasarkan peran pengguna. Luaran tahap ini adalah ERD, diagram UML, dan rancangan arsitektur sistem (subbab 4.2).</p>
+<h3>3.4.3 Tahap Development (Pengembangan)</h3>
+<p>Tahap ini mengimplementasikan rancangan menjadi kode program: pembuatan skema basis data melalui migration Laravel, implementasi lapisan Model (Eloquent ORM), Controller, dan View (Blade + Bootstrap 5), implementasi mekanisme keamanan (autentikasi, RBAC, proteksi CSRF/XSS/SQLi, rate limiting), serta integrasi fitur pendukung (ekspor PDF/Excel, notifikasi, activity log). Luaran tahap ini adalah sistem LMS yang dapat dijalankan (subbab 4.3).</p>
+<h3>3.4.4 Tahap Evaluation (Evaluasi)</h3>
+<p>Tahap ini menilai kelayakan sistem melalui dua jenis pengujian: <strong>(1) black-box testing</strong> &mdash; pengujian fungsional dengan menjalankan skenario uji langsung terhadap sistem yang berjalan dan membandingkan hasil aktual dengan hasil yang diharapkan; dan <strong>(2) User Acceptance Testing (UAT)</strong> &mdash; evaluasi penerimaan pengguna melalui kuesioner Skala Likert. Luaran tahap ini adalah tabel hasil pengujian black-box dan hasil pengolahan kuesioner UAT (subbab 4.4).</p>
+
+<h2>3.5 Teknik Pengumpulan Data</h2>
+<table>
+<tr><th>Teknik</th><th>Tujuan</th><th>Digunakan pada Tahap</th></tr>
+<tr><td>Observasi</td><td>Mengamati langsung proses akademik yang berjalan di SMKN 9 Garut</td><td>Analysis</td></tr>
+<tr><td>Wawancara</td><td>Menggali kebutuhan spesifik dari calon pengguna (Administrator/Guru)</td><td>Analysis</td></tr>
+<tr><td>Studi Pustaka</td><td>Mengkaji teori, metode, dan penelitian terdahulu yang relevan</td><td>Analysis, Design</td></tr>
+<tr><td>Studi Dokumentasi</td><td>Menelaah data struktural sekolah (jurusan, mata pelajaran, tahun ajaran)</td><td>Analysis, Design</td></tr>
+<tr><td>Pengujian (Testing)</td><td>Memverifikasi kesesuaian fungsional sistem terhadap spesifikasi</td><td>Evaluation</td></tr>
+<tr><td>Kuesioner</td><td>Mengukur tingkat penerimaan pengguna terhadap sistem</td><td>Evaluation</td></tr>
+</table>
+
+<h2>3.6 Instrumen Penelitian</h2>
+<h3>3.6.1 Instrumen Pengujian Black-Box</h3>
+<p>Instrumen berupa tabel kasus uji (<em>test case</em>) dengan struktur kolom: ID Uji, Skenario Pengujian, Data/Aksi Uji, Hasil yang Diharapkan, Hasil Aktual, Kesimpulan (Valid/Tidak Valid), Metode Verifikasi. Kasus uji disusun berdasarkan setiap kebutuhan fungsional yang telah dirumuskan pada tahap analisis. Instrumen lengkap dan hasil pengujian disajikan pada subbab 4.4.1 dan Lampiran.</p>
+<h3>3.6.2 Instrumen Kuesioner User Acceptance Testing</h3>
+<p>Instrumen kuesioner disusun menggunakan Skala Likert 5 poin (1 = Sangat Tidak Setuju, 2 = Tidak Setuju, 3 = Cukup/Netral, 4 = Setuju, 5 = Sangat Setuju), dengan kisi-kisi pertanyaan mengacu pada aspek kebutuhan nonfungsional sistem (NF-01&ndash;NF-07), yaitu kemudahan penggunaan (<em>usability</em>), keamanan (<em>security</em>), performa (<em>performance</em>), keandalan (<em>reliability</em>), dan kesesuaian fungsi terhadap kebutuhan peran masing-masing responden. Kisi-kisi dan daftar pertanyaan lengkap per peran disajikan pada Lampiran A.</p>
+
+<h2>3.7 Teknik Analisis Data</h2>
+<h3>3.7.1 Analisis Data Pengujian Black-Box</h3>
+<p>Setiap kasus uji dinyatakan <strong>"Valid"</strong> apabila hasil aktual sistem sesuai dengan hasil yang diharapkan, dan <strong>"Tidak Valid"</strong> apabila terdapat penyimpangan. Tingkat keberhasilan pengujian dihitung dengan rumus:</p>
+<pre>Persentase Keberhasilan = (Jumlah Kasus Uji Valid / Total Kasus Uji) x 100%</pre>
+<p>Sistem dinyatakan layak dari sisi fungsional apabila seluruh atau sebagian besar (disarankan &ge; 90%) kasus uji dinyatakan valid; kasus uji yang tidak valid ditindaklanjuti dengan perbaikan kode sebelum pengujian diulang (<em>regression testing</em>).</p>
+<h3>3.7.2 Analisis Data Kuesioner UAT</h3>
+<p>Data kuesioner Skala Likert diolah menggunakan teknik perhitungan persentase kelayakan (Sugiyono, 2019), dengan rumus:</p>
+<pre>Persentase Kelayakan (%) = (Total Skor yang Diperoleh / Skor Maksimal Ideal) x 100%</pre>
+<p>di mana <strong>Skor Maksimal Ideal</strong> = (Skor tertinggi Skala Likert) &times; (Jumlah butir pertanyaan) &times; (Jumlah responden). Hasil persentase kemudian diinterpretasikan menggunakan kategori berikut:</p>
+<table>
+<tr><th>Rentang Persentase</th><th>Kategori Kelayakan</th></tr>
+<tr><td>81% &ndash; 100%</td><td>Sangat Layak</td></tr>
+<tr><td>61% &ndash; 80%</td><td>Layak</td></tr>
+<tr><td>41% &ndash; 60%</td><td>Cukup Layak</td></tr>
+<tr><td>21% &ndash; 40%</td><td>Kurang Layak</td></tr>
+<tr><td>0% &ndash; 20%</td><td>Sangat Tidak Layak</td></tr>
+</table>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Tabel interpretasi di atas adalah rentang umum yang lazim dipakai pada penelitian R&amp;D berskala Likert 5 poin (Sugiyono, 2019). Sesuaikan dengan tabel interpretasi yang diwajibkan dosen pembimbing/program studi jika berbeda.</p></div>
+
+<h1>Bab IV<br>Hasil dan Pembahasan</h1>
+<p>Bab ini menyajikan hasil penelitian mengikuti empat tahap <strong>Design and Development Research (DDR)</strong> yang telah diuraikan pada Bab III: Analysis, Design, Development, dan Evaluation.</p>
+
+<h2>4.1 Hasil Tahap Analysis</h2>
+<h3>4.1.1 Gambaran Umum Sistem</h3>
+<p>Sistem yang dikembangkan adalah <strong>Learning Management System (LMS) SMKN 9 Garut</strong>, sebuah aplikasi web yang menghubungkan tiga peran pengguna &mdash; Administrator, Guru, dan Siswa &mdash; dalam satu sistem terpadu untuk manajemen akademik, distribusi materi pembelajaran, pengelolaan tugas, kuis, ujian daring, presensi, nilai, jadwal, dan komunikasi sekolah.</p>
+
+<h3>4.1.2 Kebutuhan Fungsional</h3>
+<p><strong>Administrator</strong></p>
+<table>
+<tr><th>Kode</th><th>Kebutuhan</th></tr>
+<tr><td>F-A01</td><td>Sistem dapat melakukan autentikasi (login/logout) administrator</td></tr>
+<tr><td>F-A02</td><td>Sistem menyediakan dashboard ringkasan statistik seluruh sekolah</td></tr>
+<tr><td>F-A03</td><td>Admin dapat mengelola data User, Guru, Siswa, Jurusan, Kelas, Mata Pelajaran, Tahun Ajaran</td></tr>
+<tr><td>F-A04</td><td>Admin dapat mengelola penugasan mengajar (guru &harr; mapel &harr; kelas &harr; tahun ajaran)</td></tr>
+<tr><td>F-A05</td><td>Admin dapat mengelola seluruh materi, tugas, kuis, ujian, nilai, presensi, dan jadwal di semua kelas</td></tr>
+<tr><td>F-A06</td><td>Admin dapat membuat pengumuman sekolah dan memoderasi forum diskusi</td></tr>
+<tr><td>F-A07</td><td>Admin dapat mencetak/ekspor laporan (Guru, Siswa, Nilai, Presensi, Materi, Tugas, Ujian) ke PDF dan Excel</td></tr>
+<tr><td>F-A08</td><td>Admin dapat melihat log aktivitas seluruh pengguna</td></tr>
+<tr><td>F-A09</td><td>Admin dapat mengatur konfigurasi sistem (identitas sekolah, logo)</td></tr>
+<tr><td>F-A10</td><td>Admin dapat melakukan backup dan restore basis data</td></tr>
+</table>
+<p><strong>Guru</strong></p>
+<table>
+<tr><th>Kode</th><th>Kebutuhan</th></tr>
+<tr><td>F-G01</td><td>Guru dapat login dan melihat dashboard aktivitas mengajarnya</td></tr>
+<tr><td>F-G02</td><td>Guru dapat melihat mata pelajaran dan kelas yang diampu</td></tr>
+<tr><td>F-G03</td><td>Guru dapat mengunggah materi (PDF, Word, PPT, Video, Gambar)</td></tr>
+<tr><td>F-G04</td><td>Guru dapat membuat tugas dengan tenggat waktu dan menilai pengumpulan siswa</td></tr>
+<tr><td>F-G05</td><td>Guru dapat membuat kuis/ujian dengan soal pilihan ganda dan esai, termasuk pengaturan waktu dan acak soal</td></tr>
+<tr><td>F-G06</td><td>Guru dapat menilai jawaban esai siswa secara manual</td></tr>
+<tr><td>F-G07</td><td>Guru dapat menginput presensi siswa per sesi jadwal</td></tr>
+<tr><td>F-G08</td><td>Guru dapat melihat rekap nilai otomatis (tugas, kuis, ujian) per siswa</td></tr>
+<tr><td>F-G09</td><td>Guru dapat membuat pengumuman untuk kelas yang diampu dan berdiskusi di forum</td></tr>
+</table>
+<p><strong>Siswa</strong></p>
+<table>
+<tr><th>Kode</th><th>Kebutuhan</th></tr>
+<tr><td>F-S01</td><td>Siswa dapat login dan melihat dashboard aktivitas belajarnya</td></tr>
+<tr><td>F-S02</td><td>Siswa dapat melihat dan mengunduh materi pembelajaran</td></tr>
+<tr><td>F-S03</td><td>Siswa dapat mengumpulkan tugas sebelum/dalam batas toleransi tenggat waktu</td></tr>
+<tr><td>F-S04</td><td>Siswa dapat mengerjakan kuis/ujian daring dengan timer dan auto-submit saat waktu habis</td></tr>
+<tr><td>F-S05</td><td>Siswa dapat melihat hasil kuis/ujian (skor otomatis untuk pilihan ganda)</td></tr>
+<tr><td>F-S06</td><td>Siswa dapat melihat rekap nilai, presensi, dan jadwal pelajaran miliknya</td></tr>
+<tr><td>F-S07</td><td>Siswa dapat berdiskusi di forum dan melihat pengumuman</td></tr>
+<tr><td>F-S08</td><td>Siswa menerima notifikasi untuk tugas baru, nilai baru, dan pengumuman</td></tr>
+</table>
+
+<h3>4.1.3 Kebutuhan Nonfungsional</h3>
+<table>
+<tr><th>Kode</th><th>Kategori</th><th>Deskripsi</th></tr>
+<tr><td>NF-01</td><td>Usability</td><td>Antarmuka responsif (desktop &amp; mobile), navigasi sidebar konsisten di seluruh peran</td></tr>
+<tr><td>NF-02</td><td>Security</td><td>Proteksi CSRF, XSS, SQL Injection, hashing password, rate limiting login</td></tr>
+<tr><td>NF-03</td><td>Performance</td><td>Query dioptimasi dengan eager loading &amp; index basis data</td></tr>
+<tr><td>NF-04</td><td>Reliability</td><td>Validasi input pada seluruh form, penanganan error dengan flash message</td></tr>
+<tr><td>NF-05</td><td>Maintainability</td><td>Struktur kode mengikuti pola MVC Laravel, penamaan konsisten, terpisah per peran</td></tr>
+<tr><td>NF-06</td><td>Portability</td><td>Berjalan di lingkungan XAMPP standar (Apache + MySQL + PHP 8.2+) tanpa dependensi Node.js</td></tr>
+<tr><td>NF-07</td><td>Auditability</td><td>Seluruh aksi penting (create/update/delete/login) tercatat di Activity Log</td></tr>
+</table>
+
+<h3>4.1.4 Batasan Sistem</h3>
+<p>Registrasi akun publik tidak disediakan &mdash; seluruh akun Guru dan Siswa dibuat oleh Administrator; frontend menggunakan Bootstrap 5 dan JavaScript murni tanpa build tool (Vite/NPM); serta fitur backup/restore bergantung pada ketersediaan biner <code>mysqldump</code>/<code>mysql</code> bawaan instalasi XAMPP.</p>
+
+<h2>4.2 Hasil Tahap Design</h2>
+<h3>4.2.1 Arsitektur Sistem</h3>
+<p>Sistem dibangun mengikuti pola <strong>Model-View-Controller (MVC)</strong> bawaan Laravel, dengan pemisahan direktori Controller dan View berdasarkan peran pengguna:</p>
+<pre>app/Http/Controllers/
++-- Admin/    (24 controller - akses penuh seluruh modul)
++-- Guru/     (14 controller - akses terbatas pada mata pelajaran yang diampu)
++-- Siswa/    (11 controller - akses terbatas pada data milik sendiri)
++-- *.php     (Controller bersama: Dashboard, Profile, Notification)</pre>
+<p>Setiap grup rute (<code>routes/admin.php</code>, <code>routes/guru.php</code>, <code>routes/siswa.php</code>) dilindungi middleware <code>auth</code>, <code>verified</code>, dan <code>role:&lt;peran&gt;</code> dari paket Spatie Laravel-Permission, sehingga permintaan dari pengguna yang tidak memiliki peran sesuai akan ditolak sebelum mencapai logika Controller.</p>
+
+<h3>4.2.2 Use Case Diagram</h3>
+<p>Use case diagram memetakan interaksi tiga aktor (Administrator, Guru, Siswa) terhadap 22 fungsi utama sistem, mulai dari autentikasi, pengelolaan data master, pengelolaan materi/tugas/kuis/ujian, presensi, nilai, pengumuman, forum diskusi, laporan, hingga pengaturan sistem.</p>
+<table>
+<tr><th>Aktor</th><th>Jumlah Use Case yang Diakses</th><th>Contoh Use Case Eksklusif</th></tr>
+<tr><td>Administrator</td><td>17 dari 22 use case</td><td>Backup/Restore Database, Pengaturan Sistem, Activity Log</td></tr>
+<tr><td>Guru</td><td>11 dari 22 use case</td><td>Kelola Materi, Kelola Tugas &amp; Penilaian, Kelola Kuis &amp; Ujian</td></tr>
+<tr><td>Siswa</td><td>9 dari 22 use case</td><td>Mengerjakan Tugas, Mengerjakan Kuis/Ujian, Lihat Nilai &amp; Presensi Pribadi</td></tr>
+</table>
+<div class="todo"><p><strong>&#9888; TODO:</strong> Sisipkan gambar Use Case Diagram (render dari notasi Mermaid pada berkas <code>docs/DIAGRAM.md</code> bagian 1) sebagai "Gambar 4.1" di sini.</p></div>
+
+<h3>4.2.3 Activity Diagram</h3>
+<p>Tujuh alur kerja yang memiliki percabangan keputusan bermakna dimodelkan dalam bentuk Activity Diagram, mewakili proses inti ketiga peran pengguna serta dua proses administratif yang berkorelasi langsung dengan temuan pengujian pada subbab 4.3.5 dan 4.4.1:</p>
+<ol>
+<li><strong>Siswa Mengerjakan Ujian Online</strong> &mdash; memodelkan alur mulai dari pengecekan rentang waktu ujian, pembuatan record percobaan (exam attempt), auto-save jawaban, hingga percabangan status akhir: <code>graded</code> (jika seluruh soal pilihan ganda) atau <code>submitted</code> (jika terdapat soal esai, menunggu penilaian guru).</li>
+<li><strong>Guru Membuat Tugas dan Menilai</strong> &mdash; memodelkan alur mulai dari pembuatan tugas, notifikasi otomatis ke siswa terdaftar, pengumpulan oleh siswa, penilaian oleh guru, hingga perhitungan ulang rekap nilai secara otomatis.</li>
+<li><strong>Siswa Mengumpulkan Tugas</strong> &mdash; memodelkan percabangan penting terkait tenggat waktu: pengumpulan ditolak jika melewati deadline dan guru tidak mengizinkan keterlambatan (<code>allow_late = false</code>); jika diizinkan, status ditandai <code>late</code>, sedangkan pengumpulan tepat waktu ditandai <code>submitted</code>.</li>
+<li><strong>Guru Membuat Kuis/Ujian dengan Soal Pilihan Ganda &amp; Esai</strong> &mdash; memodelkan percabangan tipe soal: pilihan ganda memerlukan opsi jawaban dan penanda opsi benar, sedangkan esai hanya memerlukan pertanyaan dan skor maksimal.</li>
+<li><strong>Guru Menginput Presensi</strong> &mdash; memodelkan alur pemilihan jadwal dan tanggal sesi, penentuan status kehadiran per siswa (hadir/izin/sakit/alpha), hingga penyimpanan massal per sesi.</li>
+<li><strong>Admin Menghapus Data Master dengan Proteksi Relasi</strong> &mdash; memodelkan mekanisme yang secara nyata ditemukan dan diperbaiki selama pengembangan (subbab 4.3.5): pemeriksaan relasi aktif sebelum penghapusan, dan pembungkusan operasi dalam transaksi basis data.</li>
+<li><strong>Admin Backup &amp; Restore Database</strong> &mdash; memodelkan percabangan keberhasilan/kegagalan proses eksternal (mysqldump/mysql via Symfony Process), termasuk penanganan galat yang graceful tanpa merusak data yang sudah ada.</li>
+</ol>
+<div class="todo"><p><strong>&#9888; TODO:</strong> Sisipkan gambar ketujuh Activity Diagram (render dari <code>docs/DIAGRAM.md</code> bagian 2.1&ndash;2.7) sebagai "Gambar 4.2" s.d. "Gambar 4.8".</p></div>
+
+<h3>4.2.4 Sequence Diagram</h3>
+<p>Sembilan interaksi antarkomponen dimodelkan dalam bentuk Sequence Diagram, mencakup alur permintaan-tanggapan (HTTP), pemrosesan asinkron (AJAX), orkestrasi antar-service, hingga interaksi dengan proses eksternal sistem operasi:</p>
+<ol>
+<li><strong>Login dan Redirect Berdasarkan Peran</strong> &mdash; alur autentikasi melalui Laravel Fortify hingga pengalihan ke dashboard sesuai peran oleh <code>DashboardController</code>.</li>
+<li><strong>Siswa Mengumpulkan Tugas</strong> &mdash; validasi berkas, penyimpanan ke disk <code>public</code>, dan pencatatan submission.</li>
+<li><strong>Ekspor Laporan PDF/Excel</strong> &mdash; interaksi <code>ReportController</code> dengan DomPDF dan Maatwebsite Excel.</li>
+<li><strong>Siswa Menjawab Soal Kuis (AJAX Auto-Save &amp; Auto-Scoring)</strong> &mdash; permintaan asinkron per-soal dari browser ke <code>QuizController::answer()</code>, mencakup percabangan penilaian otomatis pilihan ganda vs. esai yang ditunda ke guru; interaksi ini menjadi dasar teknis akurasi yang dibuktikan pada TC-09.</li>
+<li><strong>RBAC Middleware &mdash; Penolakan Akses Lintas Peran</strong> &mdash; bagaimana RoleMiddleware (Spatie) mencegat permintaan sebelum mencapai Controller ketika peran pengguna tidak sesuai, menghasilkan HTTP 403; melandasi kebutuhan NF-02 dan kasus uji TC-01.</li>
+<li><strong>Guru Membuat Tugas &rarr; Notifikasi Massal ke Siswa Terdaftar</strong> &mdash; pola fan-out satu aksi guru memicu notify() berulang ke seluruh siswa yang terdaftar (enrolled) pada course terkait.</li>
+<li><strong>Guru Menilai Tugas &rarr; Rekap Nilai Otomatis + Notifikasi</strong> &mdash; orkestrasi <code>SubmissionController</code> memanggil <code>GradeService::recalculateForCourse()</code> sekaligus mengirim notifikasi ke siswa dalam satu aksi.</li>
+<li><strong>Admin Backup Database ke File SQL</strong> &mdash; interaksi <code>BackupController</code> dengan proses eksternal (Symfony Process menjalankan biner mysqldump), termasuk jalur kegagalan proses.</li>
+<li><strong>Guru Menilai Esai Kuis Secara Manual</strong> &mdash; skor esai yang di-cap ke skor maksimal soal, diikuti pemanggilan ulang GradeService untuk memperbarui rekap nilai.</li>
+</ol>
+<div class="todo"><p><strong>&#9888; TODO:</strong> Sisipkan gambar kesembilan Sequence Diagram (render dari <code>docs/DIAGRAM.md</code> bagian 3.1&ndash;3.9) sebagai "Gambar 4.9" s.d. "Gambar 4.17".</p></div>
+
+<h3>4.2.5 Class Diagram</h3>
+<p>Struktur statis sistem &mdash; kelas, atribut, method bisnis, dan relasi antarkelas &mdash; diturunkan langsung dari 28 Model Eloquent pada <code>app/Models/</code>, sehingga class diagram menjadi jembatan antara rancangan basis data (ERD, subbab 4.2.6) dan implementasi kode aktual (subbab 4.3). Karena memuat 28 kelas, class diagram dipecah menjadi tiga diagram per modul agar tetap terbaca, mengikuti pengelompokan yang sama dengan ERD:</p>
+<ol>
+<li><strong>Modul Data Master &amp; Akademik</strong> (10 kelas: User, Teacher, Student, Department, AcademicYear, Subject, ClassRoom, Course, Enrollment, Schedule) &mdash; memuat method bisnis seperti <code>User::isAdmin()</code>/<code>isTeacher()</code>/<code>isStudent()</code> untuk pengecekan peran, dan <code>Course::getNameAttribute()</code> untuk representasi nama gabungan mata pelajaran-kelas.</li>
+<li><strong>Modul Pembelajaran &amp; Penilaian</strong> (13 kelas: Material, Assignment, Submission, Quiz, QuizQuestion, QuizAttempt, QuizAnswer, Exam, ExamQuestion, ExamAttempt, ExamAnswer, Grade, Attendance) &mdash; memuat method bisnis kunci yang telah dibahas pada subbab 4.3.4, seperti <code>Assignment::isPastDeadline()</code>, <code>Quiz::isOpen()</code>, dan <code>Grade::letterFor()</code>.</li>
+<li><strong>Modul Komunikasi &amp; Sistem</strong> (5 kelas: Announcement, Discussion, DiscussionComment, Setting, ActivityLog) &mdash; mencakup relasi rekursif DiscussionComment terhadap dirinya sendiri (balasan komentar berjenjang) dan method statis <code>Setting::get()</code>/<code>set()</code> yang memanfaatkan cache aplikasi.</li>
+</ol>
+<div class="todo"><p><strong>&#9888; TODO:</strong> Sisipkan gambar ketiga Class Diagram (render dari <code>docs/DIAGRAM.md</code> bagian 4.1&ndash;4.3) sebagai "Gambar 4.18", "Gambar 4.19", dan "Gambar 4.20".</p></div>
+
+<h3>4.2.6 Entity Relationship Diagram (ERD)</h3>
+<p>Basis data dirancang dengan <strong>30 entitas domain aplikasi</strong> (di luar tabel infrastruktur bawaan Laravel dan RBAC), meliputi entitas data master (<code>users</code>, <code>teachers</code>, <code>students</code>, <code>departments</code>, <code>classes</code>, <code>academic_years</code>, <code>subjects</code>), entitas transaksi pembelajaran (<code>courses</code>, <code>enrollments</code>, <code>materials</code>, <code>assignments</code>, <code>submissions</code>, <code>quizzes</code>, <code>quiz_questions</code>, <code>quiz_attempts</code>, <code>quiz_answers</code>, <code>exams</code>, <code>exam_questions</code>, <code>exam_attempts</code>, <code>exam_answers</code>, <code>grades</code>, <code>attendances</code>), serta entitas pendukung (<code>schedules</code>, <code>announcements</code>, <code>discussions</code>, <code>discussion_comments</code>, <code>notifications</code>, <code>settings</code>, <code>activity_logs</code>).</p>
+<div class="todo"><p><strong>&#9888; TODO:</strong> Sisipkan gambar ERD lengkap (render dari <code>docs/ERD.md</code>) sebagai "Gambar 4.21".</p></div>
+<p>Rancangan integritas referensial menerapkan tiga jenis aksi hapus sesuai makna bisnis masing-masing relasi:</p>
+<ul>
+<li><strong>RESTRICT</strong> &mdash; mencegah penghapusan data induk yang masih direferensikan, contoh: <code>teachers</code> tidak dapat dihapus selama masih memiliki <code>courses</code> aktif, dan <code>departments</code> tidak dapat dihapus selama masih memiliki <code>classes</code>.</li>
+<li><strong>CASCADE</strong> &mdash; data anak ikut terhapus karena tidak bermakna tanpa induknya, contoh: <code>quiz_questions</code> ikut terhapus jika <code>quiz</code> induknya dihapus.</li>
+<li><strong>SET NULL</strong> &mdash; relasi opsional yang menjadi kosong, contoh: <code>homeroom_teacher_id</code> pada <code>classes</code> menjadi <code>NULL</code> jika guru wali kelasnya dihapus.</li>
+</ul>
+<p>Constraint <code>UNIQUE</code> diterapkan pada kombinasi kolom yang secara bisnis wajib unik, di antaranya <code>courses</code> (unik per kombinasi <code>subject_id</code>, <code>class_id</code>, <code>academic_year_id</code>) dan <code>enrollments</code> (unik per <code>student_id</code> + <code>course_id</code>).</p>
+
+<h2>4.3 Hasil Tahap Development</h2>
+<h3>4.3.1 Lingkungan Pengembangan</h3>
+<table>
+<tr><th>Komponen</th><th>Teknologi/Versi yang Digunakan</th></tr>
+<tr><td>Bahasa pemrograman</td><td>PHP 8.2.12</td></tr>
+<tr><td>Framework</td><td>Laravel 12 (terverifikasi berjalan pada versi 12.64.0)</td></tr>
+<tr><td>Basis data</td><td>MySQL/MariaDB (XAMPP)</td></tr>
+<tr><td>Manajer dependensi</td><td>Composer 2.10.2</td></tr>
+<tr><td>Autentikasi</td><td>Laravel Fortify ^1.37</td></tr>
+<tr><td>Otorisasi (RBAC)</td><td>Spatie Laravel-Permission ^6.15</td></tr>
+<tr><td>Ekspor PDF</td><td>barryvdh/laravel-dompdf ^3.1</td></tr>
+<tr><td>Ekspor Excel</td><td>maatwebsite/excel ^3.1</td></tr>
+<tr><td>Frontend</td><td>Bootstrap 5, Font Awesome 6, Chart.js (di-vendor lokal, tanpa CDN/Node.js)</td></tr>
+<tr><td>Server lokal</td><td>XAMPP (Apache + MySQL), Windows</td></tr>
+</table>
+
+<h3>4.3.2 Statistik Implementasi</h3>
+<table>
+<tr><th>Komponen</th><th>Jumlah</th></tr>
+<tr><td>Controller</td><td>49 (24 Admin + 14 Guru + 11 Siswa)</td></tr>
+<tr><td>Model Eloquent</td><td>28</td></tr>
+<tr><td>Service (logika bisnis khusus)</td><td>2 (GradeService, ActivityLogger)</td></tr>
+<tr><td>Berkas migrasi basis data</td><td>32</td></tr>
+<tr><td>Tabel fisik di basis data</td><td>42 (30 domain + 5 RBAC Spatie + 7 infrastruktur Laravel)</td></tr>
+</table>
+
+<h3>4.3.3 Implementasi Modul per Peran</h3>
+<p><strong>Modul Administrator</strong> (<code>app/Http/Controllers/Admin/</code>) &mdash; 24 controller mencakup manajemen data master (User, Teacher, Student, Department, Subject, AcademicYear, ClassRoom), penugasan mengajar (Course), seluruh modul pembelajaran lintas kelas (Material, Assignment, Quiz beserta QuizQuestion, Exam beserta ExamQuestion, Grade, Attendance, Schedule), komunikasi (Announcement, Discussion), serta modul administratif (ActivityLog, Setting, Backup, Report, Dashboard).</p>
+<p><strong>Modul Guru</strong> (<code>app/Http/Controllers/Guru/</code>) &mdash; 14 controller yang seluruhnya menerapkan pembatasan kepemilikan data (<em>ownership check</em>) &mdash; guru hanya dapat mengelola mata pelajaran, materi, tugas, kuis, ujian, dan presensi milik kelas yang diampunya sendiri. Sebagai contoh, <code>MaterialController::authorizeCourse()</code> (<code>app/Http/Controllers/Guru/MaterialController.php:147-153</code>) memverifikasi bahwa <code>course_id</code> yang diajukan benar-benar dimiliki oleh guru yang sedang login sebelum mengizinkan operasi simpan/ubah.</p>
+<p><strong>Modul Siswa</strong> (<code>app/Http/Controllers/Siswa/</code>) &mdash; 11 controller yang membatasi akses hanya pada data milik siswa yang bersangkutan, diverifikasi melalui pengecekan pendaftaran (<em>enrollment</em>) pada setiap course sebelum materi/tugas/kuis/ujian dapat diakses &mdash; contoh pada <code>QuizController::authorizeAccess()</code> (<code>app/Http/Controllers/Siswa/QuizController.php:154-161</code>).</p>
+
+<h3>4.3.4 Implementasi Logika Bisnis Kunci</h3>
+<p><strong>a. Penilaian Otomatis Kuis (Auto-Scoring)</strong><br>
+Untuk soal bertipe pilihan ganda, sistem menghitung kebenaran jawaban dan skor secara otomatis setiap kali siswa menyimpan jawaban (<code>app/Http/Controllers/Siswa/QuizController.php:88-113</code>), dengan membandingkan <code>selected_option</code> terhadap <code>correct_option</code> pada tabel <code>quiz_questions</code>. Untuk soal esai, skor tetap <code>NULL</code> hingga dinilai manual oleh guru. Saat kuis diselesaikan (<code>finalize()</code>, baris 138-152), status ditentukan otomatis: <code>graded</code> jika seluruh soal berjenis pilihan ganda (skor final langsung tersedia dan rekap nilai mata pelajaran dihitung ulang via <code>GradeService</code>), atau <code>submitted</code> jika terdapat soal esai (menunggu penilaian guru).</p>
+<p><strong>b. Timer dan Auto-Submit Ujian/Kuis</strong><br>
+Batas waktu pengerjaan dihitung sebagai <code>min(waktu_mulai + durasi_menit, waktu_selesai_kuis)</code> (<code>app/Http/Controllers/Siswa/QuizController.php:77</code>), sehingga siswa yang baru memulai kuis mendekati waktu tutup tetap dibatasi oleh waktu tutup kuis, bukan hanya durasi pengerjaannya. Ketika waktu habis dan siswa membuka kembali halaman pengerjaan, sistem otomatis memanggil <code>finalize()</code> tanpa memerlukan aksi manual siswa.</p>
+<p><strong>c. Rekap Nilai Otomatis</strong><br>
+<code>GradeService::recalculateForCourse()</code> (<code>app/Services/GradeService.php:13-51</code>) menghitung nilai akhir setiap siswa dalam suatu mata pelajaran sebagai rata-rata dari tiga komponen (rata-rata skor tugas, rata-rata skor kuis, rata-rata skor ujian) yang tersedia (komponen yang belum ada nilainya diabaikan dari perhitungan, bukan dianggap nol), kemudian memetakan nilai akhir ke huruf mutu (A &ge; 90, B &ge; 80, C &ge; 70, D &ge; 60, selain itu E) melalui <code>Grade::letterFor()</code>.</p>
+<p><strong>d. Validasi Unggah Berkas</strong><br>
+Unggahan materi pembelajaran dibatasi pada tipe berkas <code>pdf, doc, docx, ppt, pptx, mp4, jpg, jpeg, png</code> dengan ukuran maksimum 20 MB (<code>app/Http/Controllers/Guru/MaterialController.php:17,44</code>), serta menghapus berkas lama dari storage saat materi diperbarui dengan berkas baru untuk mencegah berkas yatim menumpuk di server.</p>
+<p><strong>e. Keamanan Aplikasi</strong><br>
+Token CSRF diterapkan pada seluruh form, output escaping otomatis Blade mencegah XSS, seluruh akses data menggunakan Eloquent ORM/Query Builder dengan parameter binding untuk mencegah SQL Injection, kata sandi di-hash menggunakan bcrypt, sesi disimpan di basis data, dan percobaan login dibatasi 5 kali per menit per kombinasi email + alamat IP melalui Laravel Fortify.</p>
+
+<h3>4.3.5 Temuan dan Perbaikan Selama Pengembangan</h3>
+<p>Selama proses pengembangan dan pengujian berjalan (22 Juli 2026), ditemukan satu cacat fungsional (<em>bug</em>) pada modul manajemen Guru: penghapusan akun guru yang masih mengampu mata pelajaran aktif menyebabkan <strong>HTTP 500 (Unhandled QueryException)</strong> karena constraint RESTRICT pada <code>courses.teacher_id</code> belum divalidasi di lapisan Controller sebelum operasi hapus dieksekusi. Perbaikan yang diterapkan:</p>
+<ol>
+<li>Menambahkan pemeriksaan <code>$teacher-&gt;courses()-&gt;exists()</code> sebelum penghapusan, mengembalikan pesan galat yang informatif ("Guru tidak dapat dihapus karena masih mengampu mata pelajaran...") alih-alih membiarkan exception mentah tampil ke pengguna (<code>app/Http/Controllers/Admin/TeacherController.php:135-137</code>).</li>
+<li>Membungkus operasi penghapusan dengan <code>DB::transaction()</code> (<code>app/Http/Controllers/Admin/TeacherController.php:139-142</code>) untuk mencegah kondisi tidak konsisten &mdash; pada percobaan sebelum perbaikan, sebagian data (baris <code>model_has_roles</code> dan <code>model_has_permissions</code>) sempat terhapus meskipun baris <code>users</code> gagal dihapus karena tidak ada transaksi yang membungkusnya.</li>
+</ol>
+<p>Temuan ini menjadi salah satu kasus uji black-box (TC-06/TC-06b, subbab 4.4.1) dan menunjukkan bahwa siklus pengembangan-pengujian-perbaikan pada penelitian ini berjalan secara nyata, bukan sekadar simulasi di atas kertas.</p>
+
+<h2>4.4 Hasil Tahap Evaluation</h2>
+<h3>4.4.1 Hasil Pengujian Black-Box</h3>
+<p>Pengujian dilakukan dengan dua metode: <strong>(a) otomatis</strong>, mensimulasikan permintaan HTTP nyata terhadap aplikasi yang sedang berjalan di <code>http://localhost/LMS9/public</code> menggunakan sesi dan token CSRF yang sah, dan <strong>(b) verifikasi data/kode</strong>, memeriksa konsistensi data hasil proses bisnis terhadap logika program yang menghasilkannya. Seluruh pengujian pada tabel berikut dieksekusi pada <strong>22 Juli 2026</strong> terhadap sistem yang benar-benar berjalan (bukan simulasi/perkiraan). Skrip dan hasil mentah pengujian tersedia pada Lampiran B.</p>
+<table>
+<tr><th>ID</th><th>Kebutuhan</th><th>Skenario Pengujian</th><th>Hasil Diharapkan</th><th>Hasil Aktual</th><th>Kesimpulan</th><th>Metode</th></tr>
+<tr><td>TC-01</td><td>NF-02, F-A01</td><td>Akses halaman admin tanpa login</td><td>Dialihkan ke halaman login</td><td>Dialihkan ke halaman login</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-02</td><td>F-A01</td><td>Login sukses sebagai Administrator</td><td>Dialihkan ke /admin/dashboard</td><td>Login &rarr; /dashboard &rarr; /admin/dashboard</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-03</td><td>F-G01</td><td>Login sukses sebagai Guru</td><td>Dialihkan ke /guru/dashboard</td><td>Login &rarr; /dashboard &rarr; /guru/dashboard</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-04</td><td>F-S01</td><td>Login sukses sebagai Siswa</td><td>Dialihkan ke /siswa/dashboard</td><td>Login &rarr; /dashboard &rarr; /siswa/dashboard</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-05</td><td>NF-02</td><td>Login dengan kata sandi salah</td><td>Login ditolak, kembali ke /login</td><td>Redirect ke /login, tidak masuk dashboard manapun</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-06</td><td>F-A03, NF-04</td><td>Hapus guru yang masih mengampu 12 mata pelajaran aktif</td><td>Ditolak dengan pesan galat, bukan crash</td><td>HTTP 302 + pesan flash error tampil (setelah perbaikan; sebelum perbaikan: HTTP 500)</td><td>Valid*</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-07</td><td>F-A01</td><td>Logout Administrator</td><td>Dialihkan keluar dari area admin</td><td>HTTP 302 redirect</td><td>Valid</td><td>Otomatis (HTTP nyata)</td></tr>
+<tr><td>TC-08</td><td>F-A04</td><td>Konstrain unik penugasan mengajar</td><td>Ditolak oleh basis data (duplikat)</td><td>ERROR 1062: Duplicate entry '2-1-2'</td><td>Valid</td><td>Otomatis (query SQL nyata)</td></tr>
+<tr><td>TC-09</td><td>F-S04, F-S05</td><td>Konsistensi penilaian otomatis 600 jawaban pilihan ganda</td><td>0 baris tidak konsisten</td><td>600 dari 600 jawaban konsisten</td><td>Valid</td><td>Verifikasi data (SQL agregat)</td></tr>
+<tr><td>TC-10</td><td>F-G08, F-S06</td><td>Konsistensi huruf mutu terhadap 590 baris nilai</td><td>0 baris tidak konsisten</td><td>590 dari 590 baris konsisten</td><td>Valid</td><td>Verifikasi data (SQL agregat)</td></tr>
+<tr><td>TC-11</td><td>F-G03, NF-02</td><td>Validasi tipe &amp; ukuran berkas materi</td><td>Berkas di luar tipe/ukuran ditolak Validator</td><td>Aturan validasi ditemukan pada store()/update()</td><td>Valid</td><td>Verifikasi kode</td></tr>
+<tr><td>TC-12</td><td>F-S04</td><td>Batas waktu kuis mengikuti waktu tutup, bukan hanya durasi</td><td>Tidak bisa mengerjakan melewati waktu tutup</td><td>Logika min() ditemukan pada attempt() baris 77</td><td>Valid</td><td>Verifikasi kode</td></tr>
+<tr><td>TC-13</td><td>NF-02</td><td>Kepemilikan data guru (tidak bisa kelola materi guru lain)</td><td>Akses ditolak (403) jika bukan pemilik</td><td>Pengecekan abort_unless ditemukan pada baris terkait</td><td>Valid</td><td>Verifikasi kode</td></tr>
+</table>
+<p><strong>Ringkasan:</strong> dari <strong>13 kasus uji</strong>, seluruhnya (<strong>13/13 atau 100%</strong>) dinyatakan Valid pada kondisi akhir sistem (setelah perbaikan bug TC-06).</p>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Tabel di atas adalah subset representatif, bukan seluruh 27 kebutuhan F-A01&ndash;F-S08. Lengkapi pengujian manual melalui browser untuk kebutuhan yang belum tercakup (F-A07 ekspor PDF/Excel, F-A10 backup/restore, F-G06 penilaian esai manual, F-A06/F-G09/F-S07 pengumuman &amp; forum diskusi), tambahkan baris TC-14 dst. dengan format sama, sertakan screenshot bukti pada Lampiran C.</p></div>
+
+<h3>4.4.2 Hasil Evaluasi Pengguna (User Acceptance Testing)</h3>
+<div class="todo">
+<p><strong>&#9888; TODO (WAJIB data primer asli):</strong> Bagian ini tidak boleh diisi dengan data karangan. Instrumen kuesioner sudah disiapkan lengkap pada Lampiran A. Langkah: (1) sebar kuesioner ke responden nyata; (2) rekap jawaban; (3) hitung persentase kelayakan (rumus subbab 3.7.2); (4) tempelkan tabel hasil di sini:</p>
+</div>
+<table>
+<tr><th>Aspek</th><th>Jumlah Butir</th><th>Skor Diperoleh</th><th>Skor Maksimal Ideal</th><th>Persentase</th><th>Kategori</th></tr>
+<tr><td>Usability (Admin)</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;%</td><td>&hellip;</td></tr>
+<tr><td>Usability (Guru)</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;%</td><td>&hellip;</td></tr>
+<tr><td>Usability (Siswa)</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;%</td><td>&hellip;</td></tr>
+<tr><td>Security &amp; Reliability</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;%</td><td>&hellip;</td></tr>
+<tr><td>Kesesuaian Fungsi</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;%</td><td>&hellip;</td></tr>
+</table>
+
+<h2>4.5 Pembahasan</h2>
+<p>Hasil pengujian black-box menunjukkan bahwa <strong>seluruh 13 kasus uji yang dilaksanakan dinyatakan valid (100%)</strong> pada kondisi akhir sistem, mencakup pembuktian langsung terhadap mekanisme autentikasi dan RBAC (TC-01&ndash;TC-05, TC-07), integritas data pada level basis data (TC-08), akurasi logika penilaian otomatis pada skala data nyata 600 jawaban kuis dan 590 baris nilai (TC-09&ndash;TC-10), serta kepatuhan terhadap aturan validasi dan otorisasi kepemilikan data yang tertulis eksplisit dalam kode program (TC-11&ndash;TC-13).</p>
+<p>Temuan yang paling relevan secara metodologis adalah kasus TC-06, yang pada pengujian pertama (sebelum perbaikan) dinyatakan <strong>Tidak Valid</strong> karena sistem gagal menangani kondisi foreign key constraint secara graceful dan menampilkan error teknis (HTTP 500) kepada pengguna akhir. Temuan ini langsung ditindaklanjuti dengan perbaikan kode pada lapisan Controller (subbab 4.3.5), dan pengujian ulang (regression testing) membuktikan perbaikan berhasil. Kejadian ini menggambarkan bahwa tahap Evaluation dalam kerangka DDR bukan sekadar formalitas administratif, melainkan benar-benar berfungsi sebagai mekanisme umpan balik (feedback loop) yang memperbaiki kualitas produk sebelum dinyatakan selesai &mdash; sejalan dengan prinsip DDR bahwa evaluasi menghasilkan bukti empiris kelayakan produk (Richey &amp; Klein, 2007), bukan asumsi semata.</p>
+<p>Adapun hasil evaluasi penerimaan pengguna (UAT) belum dapat disimpulkan pada naskah ini karena memerlukan data primer dari responden sesungguhnya (subbab 4.4.2). Pembahasan akhir mengenai tingkat penerimaan pengguna wajib dilengkapi setelah data kuesioner terkumpul, sebelum bab ini dinyatakan final.</p>
+
+<h1>Bab V<br>Penutup</h1>
+
+<h2>5.1 Kesimpulan</h2>
+<p>Berdasarkan hasil penelitian dan pembahasan pada Bab IV, dapat disimpulkan hal-hal berikut, mengacu langsung pada rumusan masalah yang ditetapkan pada Bab I:</p>
+<ol>
+<li><strong>Analisis kebutuhan</strong> sistem LMS SMKN 9 Garut berhasil dirumuskan ke dalam 27 kebutuhan fungsional (10 untuk Administrator, 9 untuk Guru, 8 untuk Siswa) dan 7 kebutuhan nonfungsional yang mencakup aspek usability, security, performance, reliability, maintainability, portability, dan auditability, sebagaimana diuraikan pada subbab 4.1.</li>
+<li><strong>Perancangan sistem</strong> berhasil menghasilkan Entity Relationship Diagram dengan 30 entitas domain aplikasi beserta aturan integritas referensial (CASCADE, RESTRICT, SET NULL) yang disesuaikan dengan makna bisnis tiap relasi, serta diagram UML (1 Use Case Diagram, 7 Activity Diagram, dan 9 Sequence Diagram, ditambah 3 Class Diagram per modul yang mencakup seluruh 28 kelas Model Eloquent) yang memodelkan interaksi tiga peran pengguna dengan sistem, sebagaimana diuraikan pada subbab 4.2.</li>
+<li><strong>Implementasi sistem</strong> berhasil dilakukan menggunakan framework Laravel 12 dan PHP 8.2, menghasilkan sistem yang berjalan nyata dengan 49 controller, 28 model, dan 32 berkas migrasi basis data, serta menerapkan prinsip keamanan aplikasi web meliputi proteksi CSRF, XSS, SQL Injection, hashing kata sandi, rate limiting login, dan Role-Based Access Control tiga peran (Administrator, Guru, Siswa) melalui paket Spatie Laravel-Permission, sebagaimana diuraikan pada subbab 4.3.</li>
+<li><strong>Pengujian black-box</strong> yang dilaksanakan terhadap 13 kasus uji representatif &mdash; mencakup autentikasi dan otorisasi, integritas data pada level basis data, akurasi logika penilaian otomatis pada skala data nyata (600 jawaban kuis dan 590 baris nilai), serta kepatuhan terhadap aturan validasi dan kepemilikan data &mdash; menunjukkan <strong>tingkat keberhasilan 100% (13 dari 13 kasus uji valid)</strong> pada kondisi akhir sistem. Proses pengujian turut menemukan dan berhasil memperbaiki satu cacat fungsional (penghapusan guru dengan mata pelajaran aktif yang sebelumnya menyebabkan error server), membuktikan bahwa tahap evaluasi dalam kerangka DDR berperan nyata sebagai mekanisme umpan balik perbaikan produk, sebagaimana diuraikan pada subbab 4.4.1 dan 4.5.</li>
+<li><strong>Tingkat penerimaan pengguna</strong> terhadap sistem LMS yang dikembangkan &mdash; <span style="background:#FFF2CC;">[&#9888; TODO: lengkapi kalimat ini setelah data kuesioner UAT pada subbab 4.4.2 terisi, contoh: "menunjukkan kategori 'Sangat Layak' dengan persentase kelayakan rata-rata XX,X% berdasarkan evaluasi terhadap N responden (Administrator, Guru, dan Siswa)."]</span></li>
+</ol>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Poin 5 di atas wajib diisi berdasarkan hasil kuesioner UAT sungguhan &mdash; jangan disimpulkan sebelum data terkumpul dan diolah. Jika ada aspek yang dinilai kurang oleh responden, sebutkan juga secara jujur sebagai bagian dari kesimpulan.</p></div>
+<p>Secara umum, penelitian ini membuktikan bahwa pendekatan <strong>Design and Development Research (DDR)</strong> dapat diterapkan secara efektif dalam pengembangan sistem informasi pendidikan, karena menyediakan kerangka kerja yang memastikan setiap tahap (Analysis, Design, Development, Evaluation) menghasilkan luaran yang terdokumentasi dan dapat diverifikasi, sekaligus menempatkan pengujian dan evaluasi pengguna sebagai bagian integral dari proses penelitian &mdash; bukan sekadar tahap akhir pengembangan perangkat lunak konvensional.</p>
+
+<h2>5.2 Saran</h2>
+<h3>5.2.1 Bagi SMKN 9 Garut</h3>
+<ol>
+<li>Sistem LMS ini disarankan diimplementasikan secara bertahap, dimulai dari pelatihan penggunaan bagi Administrator dan Guru sebelum digunakan penuh oleh seluruh siswa, agar transisi dari proses manual ke digital berjalan lancar.</li>
+<li>Diperlukan kebijakan pencadangan (backup) basis data secara berkala menggunakan fitur Backup &amp; Restore yang telah tersedia pada modul Administrator, untuk mengantisipasi risiko kehilangan data akademik.</li>
+</ol>
+<h3>5.2.2 Bagi Pengembangan Sistem Selanjutnya</h3>
+<ol>
+<li>Pengujian pada penelitian ini masih berfokus pada 13 kasus uji representatif; penelitian/pengembangan lanjutan disarankan memperluas cakupan pengujian black-box hingga mencakup seluruh 27 kebutuhan fungsional secara menyeluruh, termasuk pengujian ekspor laporan (PDF/Excel), fitur backup/restore, dan alur forum diskusi secara end-to-end.</li>
+<li>Sistem saat ini belum mencakup aplikasi mobile native; pengembangan lanjutan dapat mengeksplorasi penyediaan REST API agar dapat dikonsumsi oleh aplikasi mobile Android/iOS di masa mendatang.</li>
+<li>Modul notifikasi saat ini terbatas pada notifikasi dalam sistem (database notification); pengembangan lanjutan dapat mengintegrasikan notifikasi push browser atau surel (email) agar informasi penting lebih cepat sampai kepada pengguna.</li>
+<li>Evaluasi penerimaan pengguna pada penelitian ini dilakukan dalam skala terbatas; penelitian lanjutan disarankan melakukan evaluasi dalam skala lebih luas dan dalam jangka waktu penggunaan yang lebih panjang untuk mengukur dampak nyata terhadap efisiensi proses akademik.</li>
+</ol>
+<h3>5.2.3 Bagi Peneliti Selanjutnya</h3>
+<p>Penelitian ini dapat dijadikan rujukan bagi penelitian sejenis yang ingin menerapkan metode <strong>Design and Development Research (DDR)</strong> pada pengembangan sistem informasi berbasis web, khususnya di lingkungan pendidikan menengah kejuruan. Peneliti selanjutnya disarankan mempertimbangkan penambahan tahap <strong>Dissemination</strong> (penyebarluasan) di luar empat tahap DDR yang digunakan pada penelitian ini, apabila tujuan penelitian juga mencakup adopsi sistem di sekolah lain yang memiliki karakteristik serupa.</p>
+
+<h1>Daftar Pustaka</h1>
+<div class="todo"><p><strong>&#9888; TODO (WAJIB lengkapi sebelum sidang):</strong> Kelompok A di bawah sudah terverifikasi tautannya (lengkapi detail sitasi setelah membuka tiap tautan). Kelompok B adalah rujukan konsep umum yang lazim dipakai di bidang ini &mdash; edisi yang dicantumkan harus disesuaikan dengan edisi yang benar-benar Anda akses.</p></div>
+<p><strong>Kelompok A &mdash; Penelitian Terdahulu</strong></p>
+<ol>
+<li>Pengembangan Learning Management System (LMS) Berbasis Web dengan Framework Laravel di SMP Negeri 1 Bareng. Universitas Trunojoyo Madura. Tersedia pada: https://library.trunojoyo.ac.id/elib/detil.php?id=33987</li>
+<li>Design and Development of a Learning Management System Information System using the Waterfall Method with the Laravel Framework. Proceedings of International Conference on Islamic Community Studies (ICIE), Universitas Pembangunan Panca Budi. Tersedia pada: https://proceeding.pancabudi.ac.id/index.php/ICIE/article/view/1192</li>
+<li>Design and Development of an E-learning Information System Using the Laravel Framework at SMA Negeri 3 Medan. Journal of Information Technology, Computer Science and Electrical Engineering (JITCSE). Tersedia pada: https://ysmk.org/ejournal/index.php/jitcse/article/view/92</li>
+<li>Perancangan Sistem Informasi Akademik Sekolah Berbasis Website dengan Laravel 5 pada SMK Negeri 1 Cileles. Jurnal Ilmiah Sains dan Teknologi, LPPM Universitas Banten Jaya. Tersedia pada: https://www.ejournal.lppm-unbaja.ac.id/index.php/saintek/article/view/443</li>
+<li>Suwirmayanti. Implementasi Framework Laravel Pada Sistem Informasi Akademik SMA Negeri 1 Kediri Berbasis Web. Jurnal Nasional Komputasi dan Teknologi Informasi (JNKTI). Tersedia pada: https://ojs.serambimekkah.ac.id/jnkti/article/view/6090</li>
+</ol>
+<p><strong>Kelompok B &mdash; Landasan Teori Umum</strong></p>
+<ol>
+<li>Clark, R. C., &amp; Mayer, R. E. (2016). <em>E-Learning and the Science of Instruction: Proven Guidelines for Consumers and Designers of Multimedia Learning</em> (4th ed.). Wiley.</li>
+<li>Connolly, T., &amp; Begg, C. (2015). <em>Database Systems: A Practical Approach to Design, Implementation, and Management</em> (6th ed.). Pearson.</li>
+<li>Elmasri, R., &amp; Navathe, S. B. (2016). <em>Fundamentals of Database Systems</em> (7th ed.). Pearson.</li>
+<li>Ferraiolo, D. F., Kuhn, D. R., &amp; Chandramouli, R. (2007). <em>Role-Based Access Control</em> (2nd ed.). Artech House.</li>
+<li>Laudon, K. C., &amp; Laudon, J. P. (2020). <em>Management Information Systems: Managing the Digital Firm</em> (16th ed.). Pearson.</li>
+<li>OWASP Foundation. (2021). <em>OWASP Top 10:2021 &mdash; The Ten Most Critical Web Application Security Risks</em>. https://owasp.org/Top10/</li>
+<li>Pressman, R. S., &amp; Maxim, B. R. (2020). <em>Software Engineering: A Practitioner's Approach</em> (9th ed.). McGraw-Hill.</li>
+<li>Richey, R. C., &amp; Klein, J. D. (2007). <em>Design and Development Research: Methods, Strategies, and Issues</em>. Routledge.</li>
+<li>Richey, R. C., &amp; Nelson, W. A. (1996). Developmental research. Dalam D. H. Jonassen (Ed.), <em>Handbook of Research for Educational Communications and Technology</em>. Macmillan.</li>
+<li>Sommerville, I. (2016). <em>Software Engineering</em> (10th ed.). Pearson.</li>
+<li>Sugiyono. (2019). <em>Metode Penelitian Pendidikan: Pendekatan Kuantitatif, Kualitatif, dan R&amp;D</em>. Alfabeta.</li>
+<li>Sukamto, R. A., &amp; Shalahuddin, M. (2018). <em>Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek</em>. Informatika.</li>
+<li>Laravel LLC. (2024). <em>Laravel Documentation</em>. https://laravel.com/docs</li>
+</ol>
+
+<h1>Lampiran</h1>
+
+<h2>Lampiran A &mdash; Instrumen Kuesioner User Acceptance Testing (UAT)</h2>
+<p><strong>Petunjuk pengisian:</strong> Berilah tanda centang (&#10003;) pada kolom yang sesuai dengan pendapat Anda terhadap Sistem LMS SMKN 9 Garut. Skala: 1 = Sangat Tidak Setuju, 2 = Tidak Setuju, 3 = Cukup/Netral, 4 = Setuju, 5 = Sangat Setuju.</p>
+
+<h3>A.1 Kuesioner untuk Administrator</h3>
+<table>
+<tr><th>No</th><th>Aspek</th><th>Pernyataan</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>1</td><td>Usability</td><td>Menu dan navigasi pada panel Administrator mudah dipahami</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>Usability</td><td>Tampilan sistem nyaman dilihat dan konsisten di setiap halaman</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>Kesesuaian Fungsi</td><td>Fitur pengelolaan data Guru/Siswa/Jurusan/Kelas/Mapel berfungsi sesuai kebutuhan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4</td><td>Kesesuaian Fungsi</td><td>Fitur ekspor laporan (PDF/Excel) membantu pekerjaan administrasi</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>5</td><td>Kesesuaian Fungsi</td><td>Fitur backup/restore basis data mudah digunakan dan dapat diandalkan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6</td><td>Reliability</td><td>Sistem menampilkan pesan yang jelas ketika terjadi kesalahan input</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td>Security</td><td>Saya merasa data akademik yang dikelola sistem ini aman</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>8</td><td>Performance</td><td>Sistem merespons dengan cepat saat digunakan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>9</td><td>Auditability</td><td>Fitur log aktivitas membantu memantau perubahan data oleh pengguna lain</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>10</td><td>Kepuasan Umum</td><td>Secara keseluruhan saya puas menggunakan sistem ini untuk pekerjaan administrasi sekolah</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h3>A.2 Kuesioner untuk Guru</h3>
+<table>
+<tr><th>No</th><th>Aspek</th><th>Pernyataan</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>1</td><td>Usability</td><td>Menu dan navigasi pada panel Guru mudah dipahami</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>Kesesuaian Fungsi</td><td>Fitur unggah materi pembelajaran (PDF/Word/PPT/Video/Gambar) mudah digunakan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>Kesesuaian Fungsi</td><td>Fitur pembuatan tugas dan penilaian membantu proses pemberian nilai</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4</td><td>Kesesuaian Fungsi</td><td>Fitur pembuatan kuis/ujian daring (pilihan ganda &amp; esai) sesuai kebutuhan mengajar saya</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>5</td><td>Kesesuaian Fungsi</td><td>Penilaian otomatis untuk soal pilihan ganda menghemat waktu koreksi saya</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6</td><td>Kesesuaian Fungsi</td><td>Fitur presensi digital lebih praktis dibanding presensi kertas</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td>Reliability</td><td>Rekap nilai otomatis yang ditampilkan sistem akurat dan dapat dipercaya</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>8</td><td>Performance</td><td>Sistem merespons dengan cepat saat mengunggah materi/membuat soal</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>9</td><td>Security</td><td>Saya merasa data nilai yang saya kelola tidak dapat diubah oleh pihak yang tidak berwenang</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>10</td><td>Kepuasan Umum</td><td>Secara keseluruhan saya puas dan terbantu menggunakan sistem ini dalam mengajar</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h3>A.3 Kuesioner untuk Siswa</h3>
+<table>
+<tr><th>No</th><th>Aspek</th><th>Pernyataan</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>1</td><td>Usability</td><td>Menu dan navigasi pada panel Siswa mudah dipahami</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>Kesesuaian Fungsi</td><td>Saya mudah menemukan dan mengunduh materi pembelajaran</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>Kesesuaian Fungsi</td><td>Proses mengumpulkan tugas melalui sistem ini mudah dilakukan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4</td><td>Kesesuaian Fungsi</td><td>Tampilan timer dan proses pengerjaan kuis/ujian daring jelas dan tidak membingungkan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>5</td><td>Reliability</td><td>Hasil kuis/ujian yang ditampilkan sistem sesuai dengan jawaban yang saya berikan</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6</td><td>Kesesuaian Fungsi</td><td>Saya mudah melihat rekap nilai, presensi, dan jadwal pelajaran saya sendiri</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td>Kesesuaian Fungsi</td><td>Fitur forum diskusi dan pengumuman membantu komunikasi dengan guru/sekolah</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>8</td><td>Performance</td><td>Sistem tetap responsif saat saya mengerjakan kuis/ujian dengan batas waktu</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>9</td><td>Usability</td><td>Sistem nyaman diakses melalui perangkat mobile (HP/tablet)</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>10</td><td>Kepuasan Umum</td><td>Secara keseluruhan saya puas menggunakan sistem ini untuk belajar</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h3>A.4 Rekap Skor (diisi setelah kuesioner terkumpul)</h3>
+<table>
+<tr><th>Peran</th><th>Jumlah Responden</th><th>Jumlah Butir</th><th>Skor Maksimal Ideal</th><th>Total Skor Diperoleh</th><th>Persentase</th><th>Kategori</th></tr>
+<tr><td>Administrator</td><td></td><td>10</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Guru</td><td></td><td>10</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Siswa</td><td></td><td>10</td><td></td><td></td><td></td><td></td></tr>
+<tr><td><strong>Rata-rata Keseluruhan</strong></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>Lampiran B &mdash; Reproduksi Pengujian Black-Box Otomatis (TC-01 s.d. TC-07)</h2>
+<p>Kasus uji TC-01&ndash;TC-07 pada Bab IV subbab 4.4.1 dieksekusi menggunakan skrip PowerShell yang mensimulasikan permintaan HTTP nyata (login, akses halaman terproteksi, penghapusan data, logout) lengkap dengan penanganan token CSRF dan sesi. Skrip lengkap tersimpan pada berkas <code>docs/skripsi/lampiran/blackbox_test.ps1</code> dan hasil mentah (JSON, dieksekusi 22 Juli 2026) pada <code>docs/skripsi/lampiran/blackbox_results.json</code> di dalam repositori proyek.</p>
+<p><strong>Cara menjalankan ulang</strong> (syarat: XAMPP Apache &amp; MySQL aktif, aplikasi dapat diakses di <code>http://localhost/LMS9/public</code>):</p>
+<pre>powershell -ExecutionPolicy Bypass -File "docs\skripsi\lampiran\blackbox_test.ps1"</pre>
+<p><strong>Reproduksi TC-08 (Konstrain Unik Penugasan Mengajar):</strong></p>
+<pre>-- Dijalankan via: C:\xampp\mysql\bin\mysql.exe -u root lms_smkn9garut
+INSERT INTO courses (subject_id, teacher_id, class_id, academic_year_id, created_at, updated_at)
+VALUES (2, 5, 1, 2, NOW(), NOW());
+-- Hasil nyata: ERROR 1062 (23000): Duplicate entry '2-1-2' for key 'courses_unique_assignment'</pre>
+<p><strong>Reproduksi TC-09 (Konsistensi Penilaian Otomatis Kuis):</strong></p>
+<pre>SELECT
+    COUNT(*) AS total_mc_answers,
+    SUM(CASE WHEN (qa.selected_option = qq.correct_option) != qa.is_correct THEN 1 ELSE 0 END) AS inkonsisten_is_correct,
+    SUM(CASE WHEN qa.is_correct = 1 AND qa.score != qq.score THEN 1 ELSE 0 END) AS inkonsisten_skor_benar,
+    SUM(CASE WHEN qa.is_correct = 0 AND qa.score != 0 THEN 1 ELSE 0 END) AS inkonsisten_skor_salah
+FROM quiz_answers qa
+JOIN quiz_questions qq ON qq.id = qa.quiz_question_id
+WHERE qq.type = 'multiple_choice';
+-- Hasil nyata: total_mc_answers=600, seluruh kolom inkonsisten=0</pre>
+<p><strong>Reproduksi TC-10 (Konsistensi Huruf Mutu):</strong></p>
+<pre>SELECT
+    COUNT(*) AS total_grades,
+    SUM(CASE WHEN final_score IS NOT NULL AND (
+        (final_score >= 90 AND letter_grade != 'A') OR
+        (final_score >= 80 AND final_score < 90 AND letter_grade != 'B') OR
+        (final_score >= 70 AND final_score < 80 AND letter_grade != 'C') OR
+        (final_score >= 60 AND final_score < 70 AND letter_grade != 'D') OR
+        (final_score < 60 AND letter_grade != 'E')
+    ) THEN 1 ELSE 0 END) AS inkonsisten_letter_grade
+FROM grades;
+-- Hasil nyata: total_grades=590, inkonsisten_letter_grade=0</pre>
+
+<h2>Lampiran C &mdash; Checklist Tangkapan Layar (Screenshot) untuk Bab IV</h2>
+<div class="todo"><p><strong>&#9888; TODO (lengkapi):</strong> Ambil tangkapan layar berikut melalui browser (login menggunakan akun contoh pada Lampiran E), lalu sisipkan ke Bab IV dengan penomoran "Gambar 4.1", "Gambar 4.2", dst., dan beri keterangan di bawah tiap gambar (gunakan Insert Caption di Word agar masuk ke Daftar Gambar otomatis).</p></div>
+<ul>
+<li>Halaman login</li>
+<li>Dashboard Administrator (statistik ringkasan)</li>
+<li>Halaman kelola data Guru (index + form tambah)</li>
+<li>Halaman kelola penugasan mengajar (Courses)</li>
+<li>Contoh laporan hasil ekspor PDF</li>
+<li>Contoh laporan hasil ekspor Excel</li>
+<li>Dashboard Guru</li>
+<li>Form unggah materi pembelajaran</li>
+<li>Form pembuatan kuis + soal pilihan ganda &amp; esai</li>
+<li>Halaman presensi (input oleh Guru)</li>
+<li>Dashboard Siswa</li>
+<li>Halaman daftar materi (unduh)</li>
+<li>Halaman pengerjaan kuis/ujian (dengan timer terlihat)</li>
+<li>Halaman hasil kuis/ujian (skor otomatis)</li>
+<li>Halaman rekap nilai &amp; presensi milik siswa</li>
+<li>Halaman forum diskusi</li>
+<li>Pesan error saat percobaan hapus guru dengan mata pelajaran aktif (bukti TC-06, subbab 4.3.5)</li>
+</ul>
+
+<h2>Lampiran D &mdash; Kode Program Kunci (Kutipan)</h2>
+<p><strong>D.1 Perbaikan Bug Penghapusan Guru</strong> (<code>app/Http/Controllers/Admin/TeacherController.php</code>)</p>
+<pre>public function destroy(Teacher $teacher): RedirectResponse
+{
+    if ($teacher-&gt;courses()-&gt;exists()) {
+        return back()-&gt;with('error', 'Guru tidak dapat dihapus karena masih
+            mengampu mata pelajaran. Pindahkan atau hapus mata pelajaran
+            tersebut terlebih dahulu.');
+    }
+
+    DB::transaction(function () use ($teacher) {
+        ActivityLogger::log('delete', "Menghapus guru: {$teacher-&gt;user-&gt;name}");
+        $teacher-&gt;user-&gt;delete();
+    });
+
+    return back()-&gt;with('success', 'Data guru berhasil dihapus.');
+}</pre>
+<p><strong>D.2 Penilaian Otomatis Kuis</strong> (<code>app/Http/Controllers/Siswa/QuizController.php</code>)</p>
+<pre>$isCorrect = $question-&gt;type === 'multiple_choice'
+    ? ($data['selected_option'] ?? null) === $question-&gt;correct_option
+    : null;
+
+QuizAnswer::updateOrCreate(
+    ['quiz_attempt_id' =&gt; $attempt-&gt;id, 'quiz_question_id' =&gt; $question-&gt;id],
+    [
+        'selected_option' =&gt; $data['selected_option'] ?? null,
+        'answer_text' =&gt; $data['answer_text'] ?? null,
+        'is_correct' =&gt; $isCorrect,
+        'score' =&gt; $question-&gt;type === 'multiple_choice' ? ($isCorrect ? $question-&gt;score : 0) : null,
+    ]
+);</pre>
+
+<h2>Lampiran E &mdash; Akun Uji Coba Sistem</h2>
+<table>
+<tr><th>Peran</th><th>Email</th><th>Kata Sandi</th></tr>
+<tr><td>Administrator</td><td>admin@smkn9garut.sch.id</td><td>password</td></tr>
+<tr><td>Guru (contoh)</td><td>guru1@smkn9garut.sch.id s.d. guru10@smkn9garut.sch.id</td><td>password</td></tr>
+<tr><td>Siswa (contoh)</td><td>siswa1@smkn9garut.sch.id s.d. siswa100@smkn9garut.sch.id</td><td>password</td></tr>
+</table>
+<p class="small"><strong>Catatan keamanan:</strong> Kata sandi contoh di atas hanya untuk lingkungan pengembangan/demo skripsi. Ganti seluruh kata sandi default apabila sistem akan digunakan pada data akademik sungguhan di SMKN 9 Garut.</p>
+
+</div>
+</body>
+</html>

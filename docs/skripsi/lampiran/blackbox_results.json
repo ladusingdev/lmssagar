@@ -1,0 +1,58 @@
+[
+    {
+        "ID":  "TC-01",
+        "Desc":  "Akses /admin/teachers tanpa login",
+        "Expected":  "Redirect ke halaman login",
+        "Actual":  "Status 200, halaman login tampil: True",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-02",
+        "Desc":  "Login sukses sebagai Admin (admin@smkn9garut.sch.id)",
+        "Expected":  "Redirect akhir ke dashboard mengandung '/admin'",
+        "Actual":  "Login->http://localhost/LMS9/public/dashboard ; Dashboard->http://localhost/LMS9/public/admin/dashboard",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-03",
+        "Desc":  "Login sukses sebagai Guru (guru1@smkn9garut.sch.id)",
+        "Expected":  "Redirect akhir ke dashboard mengandung '/guru'",
+        "Actual":  "Login->http://localhost/LMS9/public/dashboard ; Dashboard->http://localhost/LMS9/public/guru/dashboard",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-04",
+        "Desc":  "Login sukses sebagai Siswa (siswa1@smkn9garut.sch.id)",
+        "Expected":  "Redirect akhir ke dashboard mengandung '/siswa'",
+        "Actual":  "Login->http://localhost/LMS9/public/dashboard ; Dashboard->http://localhost/LMS9/public/siswa/dashboard",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-05",
+        "Desc":  "Login dengan password salah",
+        "Expected":  "Gagal login, redirect kembali ke /login dengan pesan error",
+        "Actual":  "Status 302, Location: http://localhost/LMS9/public/login",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-06",
+        "Desc":  "Hapus guru (id=3) yang masih mengampu mata pelajaran",
+        "Expected":  "Ditolak dengan pesan error (bukan HTTP 500)",
+        "Actual":  "Status 302 (302=redirect aman, bukan crash)",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-06b",
+        "Desc":  "Pesan flash error tampil setelah percobaan hapus guru id=3",
+        "Expected":  "Pesan 'Guru tidak dapat dihapus...' tampil di halaman",
+        "Actual":  "Pesan ditemukan: True",
+        "Pass":  true
+    },
+    {
+        "ID":  "TC-07",
+        "Desc":  "Logout admin",
+        "Expected":  "Redirect ke halaman utama/login setelah logout",
+        "Actual":  "Status 302",
+        "Pass":  true
+    }
+]
