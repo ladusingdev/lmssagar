@@ -22,12 +22,8 @@ yarn-error.log
 /.vscode
 /.zed
 
-# Deploy InfinityFree - jangan commit .env production
-/deploy_infinityfree/htdocs/laravel/.env
-
-# Deploy vendor - di-build saat upload, jangan di-commit
-/deploy_infinityfree/htdocs/laravel/vendor/
-/deploy_infinityfree/htdocs/vendor/
+# Deploy InfinityFree - exclude entire folder
+/deploy_infinityfree/
 
 # IDE
 /.claude
