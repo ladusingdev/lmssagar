@@ -40,8 +40,15 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            // InfinityFree (produksi) tidak mendukung symlink (storage:link), jadi di
+            // produksi disk ini menunjuk ke folder "uploads" di dalam htdocs (web root),
+            // satu level di atas basePath ("htdocs/laravel"). Lihat docs/DEPLOYMENT_GUIDE.md.
+            'root' => env('APP_ENV') === 'production'
+                ? dirname(base_path()).'/uploads'
+                : storage_path('app/public'),
+            'url' => env('APP_ENV') === 'production'
+                ? env('APP_URL').'/uploads'
+                : env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,

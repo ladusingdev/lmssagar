@@ -32,7 +32,7 @@
                     <label class="form-label">Logo Sekolah</label>
                     <input type="file" name="logo" class="form-control">
                     @if(\App\Models\Setting::get('school_logo'))
-                        <img src="{{ asset('storage/'.\App\Models\Setting::get('school_logo')) }}" class="mt-2" height="60">
+                        <img src="{{ \Illuminate\Support\Facades\Storage::disk('public')->url(\App\Models\Setting::get('school_logo')) }}" class="mt-2" height="60">
                     @endif
                 </div>
             </div>
