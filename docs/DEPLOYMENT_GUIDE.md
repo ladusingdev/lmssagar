@@ -10,8 +10,7 @@
 |------|-------|
 | **Repo GitHub** | https://github.com/ladusingdev/lmssagar.git |
 | **GitHub Account** | ladusing@smknegeri9garut.sch.id |
-| **Domain InfinityFree** | https://lmssagar.ct.ws |
-| **Railway (cadangan)** | https://lmssagar.up.railway.app |
+| **Domain Live** | https://lmssagar.ct.ws |
 
 ---
 
@@ -161,52 +160,12 @@ InfinityFree tidak support file > ~1.2MB. File `vendor/composer/autoload_static.
 
 ---
 
-## 3. Deploy ke Railway (Cadangan)
-
-### Setup
-
-1. Buka https://railway.app → New Project → Deploy from GitHub repo
-2. Pilih `ladusingdev/lmssagar`
-3. Set Environment Variables:
-
-```env
-APP_ENV=production
-APP_DEBUG=false
-APP_KEY=base64:kMvPWglAFIACkEKRhxJV2eDt40LNisBixUXaw6C0qiU=
-APP_URL=https://lmssagar.up.railway.app
-DB_CONNECTION=pgsql
-DB_HOST=db.muvbchegtarmuceqlfcf.supabase.co
-DB_PORT=6543
-DB_DATABASE=postgres
-DB_USERNAME=postgres.muvbchegtarmuceqlfcf
-DB_PASSWORD=ladusing1!!!
-SESSION_DRIVER=file
-CACHE_STORE=file
-QUEUE_CONNECTION=sync
-```
-
-4. Enable Public Networking di tab Networking
-
-### ⚠️ Known Issue: IPv6
-
-Railway tidak support IPv6. Supabase pooler (port 6543) digunakan sebagai workaround.
-
-### Run Migration via Railway Shell
-
-Tab Deployments → View Logs → atau tab Shell:
-```bash
-php artisan migrate --force
-php artisan db:seed --force
-```
-
----
-
-## 4. Workflow Git
+## 3. Workflow Git
 
 ### Branch Structure
 
 ```
-main          <- production-ready, deploy ke Railway otomatis
+main          <- production-ready
 ```
 
 ### Commit Convention
@@ -228,12 +187,7 @@ git push origin main
 
 ### Sync ke InfinityFree
 
-Tidak ada auto-sync. Upload manual via WinSCP/FileZilla setiap ada perubahan:
-
-```bash
-# Hanya upload file yang berubah
-# Atau upload seluruh folder htdocs/ dari deploy_infinityfree/
-```
+Tidak ada auto-sync. Upload manual via WinSCP/FileZilla setiap ada perubahan.
 
 **Cara cepat sync perubahan kecil:**
 1. Edit file di komputer
@@ -243,9 +197,9 @@ Tidak ada auto-sync. Upload manual via WinSCP/FileZilla setiap ada perubahan:
 
 ---
 
-## 5. Config Files
+## 4. Config Production
 
-### .env Production (InfinityFree)
+### .env (InfinityFree)
 
 ```env
 APP_NAME="LMS SMKN 9 Garut"
@@ -273,19 +227,9 @@ BACKUP_ENABLED=false
 | User | `if0_42505714` |
 | Port | 21 |
 
-### Supabase (untuk Railway)
-
-| Item | Value |
-|------|-------|
-| Host | `db.muvbchegtarmuceqlfcf.supabase.co` |
-| Pooler Port | 6543 |
-| DB Name | `postgres` |
-| Username | `postgres.muvbchegtarmuceqlfcf` |
-| Password | `ladusing1!!!` |
-
 ---
 
-## 6. Troubleshooting
+## 5. Troubleshooting
 
 ### Error 500 di InfinityFree
 1. Cek `.env` — pastikan DB_DATABASE benar (`if0_42505714_lmssagar`)
@@ -303,7 +247,7 @@ Pastikan `htdocs/laravel/storage/framework/sessions/` writable (777).
 
 ---
 
-## 7. Fitur LMS
+## 6. Fitur LMS
 
 ### Admin
 - Dashboard (statistik, grafik)
@@ -335,23 +279,23 @@ Pastikan `htdocs/laravel/storage/framework/sessions/` writable (777).
 
 ---
 
-## 8. Tech Stack
+## 7. Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
 | Backend | Laravel 12 (PHP 8.2+) |
 | Frontend | Blade + Bootstrap 5 + Font Awesome |
 | Charts | Chart.js |
-| Database | MySQL (InfinityFree) / PostgreSQL (Supabase) |
+| Database | MySQL 8.0+ |
 | Auth | Laravel Fortify + Spatie Permission |
 | PDF | DomPDF |
 | Excel | Maatwebsite Excel |
-| Hosting | InfinityFree (primary) / Railway (backup) |
+| Hosting | InfinityFree |
 | VCS | GitHub |
 
 ---
 
-## 9. Folder Structure
+## 8. Folder Structure
 
 ```
 LMS9_/
@@ -389,7 +333,5 @@ LMS9_/
 ├── .gitignore
 ├── .env.example
 ├── composer.json
-├── Procfile
-├── railway.toml
 └── vite.config.js
 ```

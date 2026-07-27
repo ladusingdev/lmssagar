@@ -7,7 +7,7 @@
 ## Checklist
 
 - [x] Audit `deploy_infinityfree/` package
-- [x] Fix `.env` - domain & database sudah dikonfigurasi
+- [x] Fix `.env` - domain & database dikonfigurasi
 - [x] Hapus `upload_worker.ps1` (credential hardcode leak)
 - [x] Upload isi `deploy_infinityfree/htdocs/` via WinSCP ke `htdocs/`
 - [x] Fix autoload_static.php (file > 1.2MB, InfinityFree silent drop)
@@ -17,8 +17,8 @@
 - [x] Set APP_DEBUG=false
 - [x] Hapus debug files (phpinfo.php, debug.php, dll)
 - [x] Audit deployment (11 PASS, 0 FAIL)
-- [ ] **HAPUS `_migrate.php` dari server** ← SECURITY: masih ada!
 - [x] Login test: admin@smkn9garut.sch.id / password ✅
+- [ ] **HAPUS `_migrate.php` dari server** ← SECURITY: masih ada!
 
 ---
 
